@@ -8,6 +8,10 @@ struct DashboardView: View {
 
     private let lessons = ContentStore.shared.lessons
 
+    private var allLessonsComplete: Bool {
+        !lessons.isEmpty && lessons.allSatisfy { progressStore.isLessonComplete($0.id) }
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             // Header
@@ -35,6 +39,27 @@ struct DashboardView: View {
             // Lesson list
             ScrollView {
                 VStack(spacing: 8) {
+                    // Completion banner
+                    if allLessonsComplete {
+                        VStack(spacing: 8) {
+                            Image(systemName: "party.popper.fill")
+                                .font(.system(size: 28))
+                                .foregroundStyle(Color.accentColor)
+                            Text(localeManager.isArabic ? "مبروك! انت كده ماك يوزر!" : "You're a Mac user now!")
+                                .font(.subheadline.weight(.semibold))
+                            Text(localeManager.isArabic ? "خلصت كل الدروس. ارجع لأي درس وقت ما تحب." : "All lessons complete. Revisit any lesson anytime.")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                                .multilineTextAlignment(.center)
+                        }
+                        .padding(12)
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.accentColor.opacity(0.08))
+                        )
+                    }
+
                     ForEach(lessons) { lesson in
                         LessonCard(
                             lesson: lesson,

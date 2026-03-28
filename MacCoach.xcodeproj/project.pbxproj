@@ -18,6 +18,7 @@
 		66E142549868DCF739D34210 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4224B412B191D41B6BE583 /* DashboardView.swift */; };
 		854C9FAC00F6E15546B3B80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */; };
 		8BF7755A63A6B024069B6EC9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D83EB4EBBD1D9830ABB90B /* CardView.swift */; };
+		8D8A9F66AE54D58B9717F4F8 /* GlobalHotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64E46918277CD5AA36D389 /* GlobalHotKey.swift */; };
 		91E5490938B7E6139C4A746C /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C125A16616B569596F2D3 /* LessonView.swift */; };
 		AF48BB3D2DC4F5F9DC598E50 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */; };
 		CCCB2422EE444BE4257F308A /* MacCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873899A75A4214388137B8B /* MacCoachApp.swift */; };
@@ -46,6 +47,7 @@
 		2731F0CEF5450C9C2D9B1F15 /* ShortcutEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutEntry.swift; sourceTree = "<group>"; };
 		2873899A75A4214388137B8B /* MacCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCoachApp.swift; sourceTree = "<group>"; };
 		38C791194FFD02335EE5F174 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3F64E46918277CD5AA36D389 /* GlobalHotKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotKey.swift; sourceTree = "<group>"; };
 		54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CA0B7A08810A70A4977B46 /* MacCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F842795D9335F844BB775B /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				3F8C8F431420432749561E7C /* Models */,
 				DF5FF3FF66658FD95EA1C44B /* Resources */,
 				8A422FC82D6682670EE0C1CE /* Stores */,
+				FECDD9EF9F2CBB587033E5C7 /* Utilities */,
 				51954CBD5A7A7C22918E8AA8 /* Views */,
 			);
 			path = MacCoach;
@@ -162,6 +165,14 @@
 				0189D0DD2DB7A11B7AF1CC09 /* MacCoach.entitlements */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FECDD9EF9F2CBB587033E5C7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3F64E46918277CD5AA36D389 /* GlobalHotKey.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 				55F407EEC87AA60D17D07D48 /* CheatSheetView.swift in Sources */,
 				E10DAB78BDC0A98C4410E220 /* ContentStore.swift in Sources */,
 				66E142549868DCF739D34210 /* DashboardView.swift in Sources */,
+				8D8A9F66AE54D58B9717F4F8 /* GlobalHotKey.swift in Sources */,
 				E3E513E0333F91B128D83CA3 /* LanguageToggle.swift in Sources */,
 				1BC4B1F953661DAFDE0C05E2 /* Lesson.swift in Sources */,
 				AF48BB3D2DC4F5F9DC598E50 /* LessonCard.swift in Sources */,

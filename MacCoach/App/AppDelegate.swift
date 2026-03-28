@@ -1,13 +1,16 @@
 import AppKit
 import SwiftUI
 
+@MainActor
 class AppDelegate: NSObject, NSApplicationDelegate {
     private var statusItem: NSStatusItem!
     private var popover: NSPopover!
+    private var globalHotKey: GlobalHotKey?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         setupStatusItem()
         setupPopover()
+        setupGlobalHotKey()
     }
 
     private func setupStatusItem() {
@@ -27,6 +30,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.contentViewController = NSHostingController(
             rootView: PopoverContentView()
         )
+    }
+
+    private func setupGlobalHotKey() {
+        globalHotKey = GlobalHotKey { @Sendable [weak self] in
+            MainActor.assumeIsolated {
+                self?.togglePopover()
+            }
+        }
     }
 
     @objc private func togglePopover() {

@@ -137,7 +137,56 @@
     "hookAR": "مش زي File Explorer — والقص شغال بطريقة مختلفة",
     "icon": "folder",
     "order": 3,
-    "cards": []
+    "cards": [
+      {
+        "id": "finder-1",
+        "windowsLabelEN": "File Explorer shows the folder tree on the left",
+        "windowsLabelAR": "File Explorer بيعرض شجرة المجلدات على الشمال",
+        "macLabelEN": "Finder uses a column view — press Cmd+3 to switch to it",
+        "macLabelAR": "Finder بيستخدم عرض الأعمدة — اضغط Cmd+3 عشان تفتحه",
+        "explanationEN": "Finder has 4 view modes: Icon (Cmd+1), List (Cmd+2), Column (Cmd+3), and Gallery (Cmd+4). Column view is closest to Windows Explorer — you drill into folders left to right. The sidebar on the left shows favorites, drives, and network locations.",
+        "explanationAR": "Finder عنده ٤ طرق عرض: أيقونات (Cmd+1)، قائمة (Cmd+2)، أعمدة (Cmd+3)، ومعرض (Cmd+4). عرض الأعمدة أقرب حاجة لـ Windows Explorer — بتتنقل في المجلدات من شمال ليمين. الشريط الجانبي على الشمال فيه المفضلة والأقراص.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open Finder (Cmd+N from Desktop) and press Cmd+3 for column view",
+        "tryItPromptAR": "جربها دلوقتي — افتح Finder (اضغط Cmd+N من الـ Desktop) واضغط Cmd+3 لعرض الأعمدة"
+      },
+      {
+        "id": "finder-2",
+        "windowsLabelEN": "Ctrl+X to cut files, then Ctrl+V to paste",
+        "windowsLabelAR": "Ctrl+X عشان تقص ملفات، وبعدين Ctrl+V عشان تلصق",
+        "macLabelEN": "Cmd+C to copy, then Cmd+Option+V to move (cut-paste)",
+        "macLabelAR": "Cmd+C للنسخ، وبعدين Cmd+Option+V عشان تنقل (قص-لصق)",
+        "explanationEN": "Mac doesn't have a traditional 'Cut' for files in Finder. Instead: Cmd+C copies the file, then Cmd+Option+V moves it (instead of pasting a copy). Think of it as 'copy, then move-paste.' It's different, but once you learn it, it works great.",
+        "explanationAR": "الماك مفيهوش 'قص' تقليدي للملفات في Finder. بدل كده: Cmd+C بينسخ الملف، وبعدين Cmd+Option+V بينقله (بدل ما يلصق نسخة). فكّر فيها كأنها 'نسخ، وبعدين نقل.' مختلفة، بس لما تتعود عليها هتلاقيها كويسة.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — select a file, press Cmd+C, go to another folder, then Cmd+Option+V to move it",
+        "tryItPromptAR": "جربها دلوقتي — حدد ملف، اضغط Cmd+C، روح لمجلد تاني، وبعدين Cmd+Option+V عشان تنقله"
+      },
+      {
+        "id": "finder-3",
+        "windowsLabelEN": "Right-click → Properties to see file info",
+        "windowsLabelAR": "كليك يمين → Properties عشان تشوف معلومات الملف",
+        "macLabelEN": "Cmd+I to Get Info, or Space to Quick Look",
+        "macLabelAR": "Cmd+I لمعلومات الملف، أو Space للمعاينة السريعة",
+        "explanationEN": "Select a file and press Cmd+I to see its full info (size, permissions, open-with). But the real magic is Quick Look: select any file and press Space to preview it instantly — images, PDFs, videos, text files — without opening any app!",
+        "explanationAR": "حدد ملف واضغط Cmd+I عشان تشوف معلوماته (الحجم، الصلاحيات، فتح بإيه). بس السحر الحقيقي هو Quick Look: حدد أي ملف واضغط Space تعاينه فورا — صور، PDF، فيديوهات، ملفات نصية — من غير ما تفتح أي تطبيق!",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — select any file in Finder and press Space. Magic!",
+        "tryItPromptAR": "جربها دلوقتي — حدد أي ملف في Finder واضغط Space. سحر!"
+      },
+      {
+        "id": "finder-4",
+        "windowsLabelEN": "Type in the address bar to go to a path",
+        "windowsLabelAR": "بتكتب في شريط العنوان عشان تروح لمسار معين",
+        "macLabelEN": "Cmd+Shift+G to Go to Folder, or Cmd+L for the path bar",
+        "macLabelAR": "Cmd+Shift+G عشان تروح لمجلد، أو Cmd+L لشريط المسار",
+        "explanationEN": "Finder doesn't have a visible address bar by default. Press Cmd+Shift+G to type a path directly (with autocomplete!). You can also enable the Path Bar permanently: View → Show Path Bar (Cmd+Option+P). Double-click any folder in the path bar to jump there.",
+        "explanationAR": "Finder مفيهوش شريط عنوان ظاهر بشكل تلقائي. اضغط Cmd+Shift+G عشان تكتب مسار مباشرة (مع autocomplete!). كمان ممكن تفعّل الـ Path Bar: View → Show Path Bar (اضغط Cmd+Option+P). اضغط مرتين على أي مجلد في الـ Path Bar تروح ليه.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — in Finder, press Cmd+Shift+G and type ~/Downloads to jump there",
+        "tryItPromptAR": "جربها دلوقتي — في Finder، اضغط Cmd+Shift+G واكتب ~/Downloads عشان تروح ليه"
+      }
+    ]
   },
   {
     "id": "trackpad-gestures",
@@ -147,7 +196,56 @@
     "hookAR": "٧ حركات هتخليك تستغنى عن الماوس",
     "icon": "hand.draw",
     "order": 4,
-    "cards": []
+    "cards": [
+      {
+        "id": "tp-1",
+        "windowsLabelEN": "Right-click with the right mouse button",
+        "windowsLabelAR": "كليك يمين بزرار الماوس اليمين",
+        "macLabelEN": "Two-finger click (or tap) anywhere on the trackpad",
+        "macLabelAR": "اضغط بصباعين (أو انقر) في أي مكان على التراكباد",
+        "explanationEN": "Mac's trackpad doesn't have separate buttons. To right-click, click or tap with two fingers anywhere on the trackpad. You can also hold Control and click. This works everywhere — Finder, Safari, apps, the Desktop.",
+        "explanationAR": "تراكباد الماك مفيهوش أزرار منفصلة. عشان تعمل كليك يمين، اضغط أو انقر بصباعين في أي مكان على التراكباد. كمان ممكن تضغط Control وتعمل كليك. ده بيشتغل في كل مكان — Finder، Safari، التطبيقات، الـ Desktop.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — tap with two fingers on the trackpad to see a context menu",
+        "tryItPromptAR": "جربها دلوقتي — انقر بصباعين على التراكباد تشوف قائمة الخيارات"
+      },
+      {
+        "id": "tp-2",
+        "windowsLabelEN": "Scroll with the mouse wheel or scroll bar",
+        "windowsLabelAR": "بتسكرول بعجلة الماوس أو شريط التمرير",
+        "macLabelEN": "Two-finger swipe up/down to scroll (natural direction)",
+        "macLabelAR": "اسحب بصباعين لفوق/لتحت عشان تسكرول (اتجاه طبيعي)",
+        "explanationEN": "Swipe up with two fingers to scroll down (content moves up). This is called 'natural scrolling' — imagine you're pushing the page with your fingers. If it feels backwards, you can change it: System Settings → Trackpad → Scroll & Zoom → uncheck 'Natural scrolling.'",
+        "explanationAR": "اسحب بصباعين لفوق عشان تسكرول لتحت (المحتوى بيتحرك لفوق). ده اسمه 'سكرول طبيعي' — تخيل إنك بتدفع الصفحة بصوابعك. لو حاسس إنه معكوس، ممكن تغيره: System Settings → Trackpad → Scroll & Zoom → شيل علامة 'Natural scrolling.'",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — two-finger swipe on this popover to scroll through content",
+        "tryItPromptAR": "جربها دلوقتي — اسحب بصباعين على البوب أوفر ده عشان تسكرول"
+      },
+      {
+        "id": "tp-3",
+        "windowsLabelEN": "Pinch-to-zoom on touchscreen",
+        "windowsLabelAR": "بتكبّر بصباعين على الشاشة اللمسية",
+        "macLabelEN": "Pinch to zoom on the trackpad — works in Safari, Photos, Maps, and more",
+        "macLabelAR": "كبّر بصباعين على التراكباد — بيشتغل في Safari، Photos، Maps، وغيرهم",
+        "explanationEN": "The Mac trackpad supports pinch-to-zoom just like a phone screen. Spread two fingers apart to zoom in, pinch them together to zoom out. Works in Safari (web pages), Photos, Preview, Maps, and many other apps. You can also rotate with two fingers in some apps.",
+        "explanationAR": "تراكباد الماك بيدعم التكبير بصباعين زي شاشة الموبايل. افتح صباعين عشان تكبّر، قرّبهم عشان تصغّر. بيشتغل في Safari (صفحات الويب)، Photos، Preview، Maps، وتطبيقات تانية كتير. كمان ممكن تلف بصباعين في بعض التطبيقات.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open Safari and pinch to zoom in on any webpage",
+        "tryItPromptAR": "جربها دلوقتي — افتح Safari وكبّر بصباعين على أي صفحة"
+      },
+      {
+        "id": "tp-4",
+        "windowsLabelEN": "Three-finger gesture on Windows touchscreen (varies)",
+        "windowsLabelAR": "إيماءات ٣ صوابع على شاشة ويندوز اللمسية (بتختلف)",
+        "macLabelEN": "Swipe 3 fingers up for Mission Control, left/right for Spaces",
+        "macLabelAR": "اسحب ٣ صوابع لفوق لـ Mission Control، يمين/شمال للـ Spaces",
+        "explanationEN": "Three-finger gestures are essential on Mac. Swipe up: Mission Control (all windows). Swipe left/right: switch between virtual desktops (Spaces). Swipe down: App Exposé (all windows of current app). You can also use 4 fingers if you prefer — configure in System Settings → Trackpad.",
+        "explanationAR": "إيماءات ٣ صوابع أساسية على الماك. اسحب لفوق: Mission Control (كل النوافذ). اسحب يمين/شمال: التنقل بين الـ desktops (Spaces). اسحب لتحت: App Exposé (كل نوافذ التطبيق الحالي). كمان ممكن تستخدم ٤ صوابع لو تحب — اظبطها من System Settings → Trackpad.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — swipe left and right with 3 fingers to switch between Spaces",
+        "tryItPromptAR": "جربها دلوقتي — اسحب يمين وشمال بـ ٣ صوابع عشان تتنقل بين الـ Spaces"
+      }
+    ]
   },
   {
     "id": "apps-and-dock",
@@ -157,7 +255,56 @@
     "hookAR": "ليه لما تقفل النافذة التطبيق بيفضل شغال",
     "icon": "dock.rectangle",
     "order": 5,
-    "cards": []
+    "cards": [
+      {
+        "id": "dock-1",
+        "windowsLabelEN": "Click the X to close AND quit the app",
+        "windowsLabelAR": "بتضغط X عشان تقفل التطبيق وتخرج منه",
+        "macLabelEN": "Red X closes the window, but the app keeps running. Cmd+Q to quit.",
+        "macLabelAR": "الـ X الأحمر بيقفل النافذة بس، التطبيق بيفضل شغال. Cmd+Q عشان تقفله.",
+        "explanationEN": "This is the #1 surprise for Windows switchers! Clicking the red X button only closes the window — the app stays running (you'll see a dot under its Dock icon). To actually quit the app, press Cmd+Q or right-click its Dock icon and choose Quit. Some apps (like Music) are designed to run in the background.",
+        "explanationAR": "دي أكبر مفاجأة لأي حد جاي من ويندوز! الضغط على الزرار الأحمر بيقفل النافذة بس — التطبيق بيفضل شغال (هتشوف نقطة تحت أيقونته في الـ Dock). عشان تقفل التطبيق فعلا، اضغط Cmd+Q أو كليك يمين على أيقونته في الـ Dock واختار Quit.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — close a Safari window with the red X, then check the Dock — Safari is still running!",
+        "tryItPromptAR": "جربها دلوقتي — اقفل نافذة Safari بالزرار الأحمر، وبعدين بص على الـ Dock — Safari لسه شغال!"
+      },
+      {
+        "id": "dock-2",
+        "windowsLabelEN": "Download .exe, double-click to install",
+        "windowsLabelAR": "بتنزل ملف .exe وتضغط عليه مرتين عشان تثبته",
+        "macLabelEN": "Download .dmg, open it, drag app to Applications folder",
+        "macLabelAR": "نزّل ملف .dmg، افتحه، واسحب التطبيق لمجلد Applications",
+        "explanationEN": "Mac apps come as .dmg files (disk images). Open the .dmg, and you'll usually see the app icon and an arrow pointing to the Applications folder — drag the app there. That's it! For App Store apps, just click Get/Install. To uninstall: drag the app from Applications to Trash.",
+        "explanationAR": "تطبيقات الماك بتيجي كملفات .dmg. افتح الـ .dmg، وغالبا هتلاقي أيقونة التطبيق وسهم بيشاور على مجلد Applications — اسحب التطبيق هناك. خلاص كده! لتطبيقات الـ App Store، بس اضغط Get/Install. عشان تحذف: اسحب التطبيق من Applications للـ Trash.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open Finder, press Cmd+Shift+A to go to your Applications folder",
+        "tryItPromptAR": "جربها دلوقتي — افتح Finder، اضغط Cmd+Shift+A تروح لمجلد Applications"
+      },
+      {
+        "id": "dock-3",
+        "windowsLabelEN": "Pin apps to the taskbar for quick access",
+        "windowsLabelAR": "بتثبت التطبيقات على شريط المهام",
+        "macLabelEN": "Drag apps to the Dock, or right-click → Options → Keep in Dock",
+        "macLabelAR": "اسحب التطبيقات للـ Dock، أو كليك يمين → Options → Keep in Dock",
+        "explanationEN": "The Dock is like the Windows taskbar. Apps you use often can be pinned: drag them from Applications to the Dock, or right-click a running app's Dock icon → Options → Keep in Dock. To remove: drag the icon out of the Dock until you see 'Remove' and release.",
+        "explanationAR": "الـ Dock زي شريط المهام في ويندوز. التطبيقات اللي بتستخدمها كتير ممكن تثبتها: اسحبها من Applications للـ Dock، أو كليك يمين على أيقونة تطبيق شغال → Options → Keep in Dock. عشان تشيل: اسحب الأيقونة برا الـ Dock لحد ما تشوف 'Remove' وسيبها.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — right-click any app in your Dock and explore the Options menu",
+        "tryItPromptAR": "جربها دلوقتي — كليك يمين على أي تطبيق في الـ Dock واستكشف قائمة Options"
+      },
+      {
+        "id": "dock-4",
+        "windowsLabelEN": "Alt+Tab to switch between running apps",
+        "windowsLabelAR": "Alt+Tab عشان تتنقل بين التطبيقات الشغالة",
+        "macLabelEN": "Cmd+Tab to switch, or click the app in the Dock",
+        "macLabelAR": "Cmd+Tab عشان تتنقل، أو اضغط على التطبيق في الـ Dock",
+        "explanationEN": "Cmd+Tab opens the app switcher — keep holding Cmd and press Tab to cycle through running apps. Release to switch. You can also press Cmd+Tab then Q (while still holding Cmd) to quit an app from the switcher! The Dock also shows all running apps with a dot underneath.",
+        "explanationAR": "Cmd+Tab بيفتح مبدّل التطبيقات — فضل ماسك Cmd واضغط Tab عشان تتنقل بين التطبيقات الشغالة. سيب عشان تنتقل. كمان ممكن تضغط Cmd+Tab وبعدين Q (وانت ماسك Cmd) عشان تقفل تطبيق من المبدّل! الـ Dock كمان بيعرض كل التطبيقات الشغالة بنقطة تحتها.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Tab and hold Cmd to see all your running apps",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Tab وفضل ماسك Cmd عشان تشوف كل التطبيقات الشغالة"
+      }
+    ]
   },
   {
     "id": "spotlight-search",
@@ -167,6 +314,43 @@
     "hookAR": "لاقي أي حاجة في ثانية باختصار واحد",
     "icon": "magnifyingglass",
     "order": 6,
-    "cards": []
+    "cards": [
+      {
+        "id": "spot-1",
+        "windowsLabelEN": "Windows key to open Start Menu, then type to search",
+        "windowsLabelAR": "زرار Windows عشان تفتح Start Menu، وبعدين تكتب عشان تبحث",
+        "macLabelEN": "Cmd+Space to open Spotlight — start typing anything",
+        "macLabelAR": "Cmd+Space عشان تفتح Spotlight — ابدأ اكتب أي حاجة",
+        "explanationEN": "Spotlight is the fastest way to do almost anything on Mac. Press Cmd+Space and type: app names to launch them, file names to find them, math equations to calculate, unit conversions, weather, definitions — it's like a universal search bar. Use it constantly!",
+        "explanationAR": "Spotlight أسرع طريقة تعمل بيها أي حاجة على الماك. اضغط Cmd+Space واكتب: أسماء تطبيقات تفتحها، أسماء ملفات تلاقيها، معادلات حسابية، تحويل وحدات، الطقس، تعريفات — ده زي شريط بحث عالمي. استخدمه على طول!",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Space and type 'Safari' to launch it, or type '25*4' for quick math",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Space واكتب 'Safari' عشان تفتحه، أو اكتب '25*4' لحساب سريع"
+      },
+      {
+        "id": "spot-2",
+        "windowsLabelEN": "Open Control Panel or Settings app",
+        "windowsLabelAR": "بتفتح Control Panel أو تطبيق Settings",
+        "macLabelEN": "Cmd+Space → type the setting name (e.g., 'Wi-Fi', 'Bluetooth')",
+        "macLabelAR": "Cmd+Space → اكتب اسم الإعداد (مثلا 'Wi-Fi'، 'Bluetooth')",
+        "explanationEN": "Instead of digging through System Settings menus, use Spotlight to jump directly to any setting. Cmd+Space, type 'Bluetooth' — you'll see the Bluetooth preference pane as a result. Hit Enter and you're there. This works for Wi-Fi, Display, Sound, Keyboard, and every other setting.",
+        "explanationAR": "بدل ما تدور في قوائم System Settings، استخدم Spotlight عشان تروح لأي إعداد مباشرة. Cmd+Space، اكتب 'Bluetooth' — هتلاقي إعدادات الـ Bluetooth في النتائج. اضغط Enter وأنت هناك. ده بيشتغل مع Wi-Fi، Display، Sound، Keyboard، وكل إعداد تاني.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Space and type 'Display' to jump to display settings",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Space واكتب 'Display' عشان تروح لإعدادات الشاشة"
+      },
+      {
+        "id": "spot-3",
+        "windowsLabelEN": "Use File Explorer search to find files",
+        "windowsLabelAR": "بتستخدم بحث File Explorer عشان تلاقي ملفات",
+        "macLabelEN": "Spotlight finds files instantly, or use Cmd+F in Finder for advanced search",
+        "macLabelAR": "Spotlight بيلاقي الملفات فورا، أو استخدم Cmd+F في Finder لبحث متقدم",
+        "explanationEN": "Spotlight indexes your entire Mac — files, emails, messages, calendar events, and more. Just type a file name and it appears instantly. For more control, open Finder and press Cmd+F for advanced search with filters (date, type, size). You can also save smart folders that auto-update.",
+        "explanationAR": "Spotlight بيفهرس الماك كله — ملفات، إيميلات، رسائل، أحداث التقويم، وأكتر. بس اكتب اسم ملف وهيظهر فورا. لو عايز تحكم أكتر، افتح Finder واضغط Cmd+F لبحث متقدم بفلاتر (تاريخ، نوع، حجم). كمان ممكن تحفظ مجلدات ذكية بتتحدث تلقائيا.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Space and type part of a file name you know exists on your Mac",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Space واكتب جزء من اسم ملف انت عارف إنه موجود على الماك"
+      }
+    ]
   }
 ]
