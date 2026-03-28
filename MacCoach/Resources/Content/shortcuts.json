@@ -1,1 +1,206 @@
-[]
+[
+  {
+    "id": "copy", "category": "general",
+    "windowsShortcut": "Ctrl+C", "macShortcut": "Cmd+C",
+    "descriptionEN": "Copy selected item", "descriptionAR": "نسخ العنصر المحدد",
+    "searchTermsEN": ["copy", "clipboard"], "searchTermsAR": ["نسخ", "حافظة"]
+  },
+  {
+    "id": "paste", "category": "general",
+    "windowsShortcut": "Ctrl+V", "macShortcut": "Cmd+V",
+    "descriptionEN": "Paste from clipboard", "descriptionAR": "لصق من الحافظة",
+    "searchTermsEN": ["paste", "clipboard"], "searchTermsAR": ["لصق", "حافظة"]
+  },
+  {
+    "id": "cut", "category": "general",
+    "windowsShortcut": "Ctrl+X", "macShortcut": "Cmd+X",
+    "descriptionEN": "Cut selected item (text only — files use Cmd+C then Cmd+Option+V)", "descriptionAR": "قص العنصر المحدد (نص فقط — الملفات: Cmd+C ثم Cmd+Option+V)",
+    "searchTermsEN": ["cut", "move"], "searchTermsAR": ["قص", "نقل"]
+  },
+  {
+    "id": "undo", "category": "general",
+    "windowsShortcut": "Ctrl+Z", "macShortcut": "Cmd+Z",
+    "descriptionEN": "Undo last action", "descriptionAR": "تراجع عن آخر إجراء",
+    "searchTermsEN": ["undo", "revert"], "searchTermsAR": ["تراجع", "رجوع"]
+  },
+  {
+    "id": "redo", "category": "general",
+    "windowsShortcut": "Ctrl+Y", "macShortcut": "Cmd+Shift+Z",
+    "descriptionEN": "Redo last undone action", "descriptionAR": "إعادة آخر إجراء تم التراجع عنه",
+    "searchTermsEN": ["redo", "repeat"], "searchTermsAR": ["إعادة", "تكرار"]
+  },
+  {
+    "id": "save", "category": "general",
+    "windowsShortcut": "Ctrl+S", "macShortcut": "Cmd+S",
+    "descriptionEN": "Save current file", "descriptionAR": "حفظ الملف الحالي",
+    "searchTermsEN": ["save", "file"], "searchTermsAR": ["حفظ", "ملف"]
+  },
+  {
+    "id": "select-all", "category": "general",
+    "windowsShortcut": "Ctrl+A", "macShortcut": "Cmd+A",
+    "descriptionEN": "Select all items", "descriptionAR": "تحديد الكل",
+    "searchTermsEN": ["select", "all"], "searchTermsAR": ["تحديد", "الكل"]
+  },
+  {
+    "id": "find", "category": "general",
+    "windowsShortcut": "Ctrl+F", "macShortcut": "Cmd+F",
+    "descriptionEN": "Find in current document/page", "descriptionAR": "بحث في المستند/الصفحة الحالية",
+    "searchTermsEN": ["find", "search"], "searchTermsAR": ["بحث", "إيجاد"]
+  },
+  {
+    "id": "find-replace", "category": "general",
+    "windowsShortcut": "Ctrl+H", "macShortcut": "Cmd+Option+F",
+    "descriptionEN": "Find and replace (Cmd+H hides the app!)", "descriptionAR": "بحث واستبدال (Cmd+H بيخفي التطبيق!)",
+    "searchTermsEN": ["replace", "find replace", "substitute"], "searchTermsAR": ["استبدال", "بحث واستبدال"]
+  },
+  {
+    "id": "print", "category": "general",
+    "windowsShortcut": "Ctrl+P", "macShortcut": "Cmd+P",
+    "descriptionEN": "Print current document", "descriptionAR": "طباعة المستند الحالي",
+    "searchTermsEN": ["print"], "searchTermsAR": ["طباعة"]
+  },
+  {
+    "id": "new-window", "category": "general",
+    "windowsShortcut": "Ctrl+N", "macShortcut": "Cmd+N",
+    "descriptionEN": "New window or document", "descriptionAR": "نافذة أو مستند جديد",
+    "searchTermsEN": ["new", "window", "document"], "searchTermsAR": ["جديد", "نافذة", "مستند"]
+  },
+  {
+    "id": "close-window", "category": "general",
+    "windowsShortcut": "Alt+F4", "macShortcut": "Cmd+W (window) / Cmd+Q (quit app)",
+    "descriptionEN": "Close window (Cmd+W) or quit app entirely (Cmd+Q)", "descriptionAR": "قفل النافذة (Cmd+W) أو قفل التطبيق بالكامل (Cmd+Q)",
+    "searchTermsEN": ["close", "quit", "exit", "window"], "searchTermsAR": ["قفل", "إغلاق", "خروج"]
+  },
+  {
+    "id": "bold", "category": "text",
+    "windowsShortcut": "Ctrl+B", "macShortcut": "Cmd+B",
+    "descriptionEN": "Bold text", "descriptionAR": "نص عريض",
+    "searchTermsEN": ["bold", "format"], "searchTermsAR": ["عريض", "تنسيق"]
+  },
+  {
+    "id": "italic", "category": "text",
+    "windowsShortcut": "Ctrl+I", "macShortcut": "Cmd+I",
+    "descriptionEN": "Italic text", "descriptionAR": "نص مائل",
+    "searchTermsEN": ["italic", "format"], "searchTermsAR": ["مائل", "تنسيق"]
+  },
+  {
+    "id": "underline", "category": "text",
+    "windowsShortcut": "Ctrl+U", "macShortcut": "Cmd+U",
+    "descriptionEN": "Underline text", "descriptionAR": "نص مُسطّر",
+    "searchTermsEN": ["underline", "format"], "searchTermsAR": ["تسطير", "تنسيق"]
+  },
+  {
+    "id": "home-end", "category": "text",
+    "windowsShortcut": "Home / End", "macShortcut": "Cmd+Left / Cmd+Right",
+    "descriptionEN": "Jump to start or end of line", "descriptionAR": "الانتقال لبداية أو نهاية السطر",
+    "searchTermsEN": ["home", "end", "line", "cursor"], "searchTermsAR": ["بداية", "نهاية", "سطر"]
+  },
+  {
+    "id": "top-bottom", "category": "text",
+    "windowsShortcut": "Ctrl+Home / Ctrl+End", "macShortcut": "Cmd+Up / Cmd+Down",
+    "descriptionEN": "Jump to start or end of document", "descriptionAR": "الانتقال لبداية أو نهاية المستند",
+    "searchTermsEN": ["top", "bottom", "document", "beginning"], "searchTermsAR": ["أعلى", "أسفل", "مستند", "بداية"]
+  },
+  {
+    "id": "new-folder", "category": "finder",
+    "windowsShortcut": "Ctrl+Shift+N (in Explorer)", "macShortcut": "Cmd+Shift+N",
+    "descriptionEN": "Create new folder in Finder", "descriptionAR": "إنشاء مجلد جديد في Finder",
+    "searchTermsEN": ["folder", "new", "create", "directory"], "searchTermsAR": ["مجلد", "جديد", "إنشاء"]
+  },
+  {
+    "id": "move-file", "category": "finder",
+    "windowsShortcut": "Ctrl+X then Ctrl+V", "macShortcut": "Cmd+C then Cmd+Option+V",
+    "descriptionEN": "Move (cut & paste) a file — Mac uses copy then move-paste", "descriptionAR": "نقل ملف — الماك بيستخدم نسخ ثم لصق-نقل",
+    "searchTermsEN": ["move", "cut", "file", "transfer"], "searchTermsAR": ["نقل", "قص", "ملف"]
+  },
+  {
+    "id": "delete-file", "category": "finder",
+    "windowsShortcut": "Delete key", "macShortcut": "Cmd+Delete",
+    "descriptionEN": "Move file to Trash", "descriptionAR": "نقل الملف للسلة",
+    "searchTermsEN": ["delete", "trash", "remove", "bin"], "searchTermsAR": ["حذف", "سلة", "مسح"]
+  },
+  {
+    "id": "file-info", "category": "finder",
+    "windowsShortcut": "Alt+Enter (Properties)", "macShortcut": "Cmd+I",
+    "descriptionEN": "Get Info (file properties)", "descriptionAR": "عرض معلومات الملف (الخصائص)",
+    "searchTermsEN": ["properties", "info", "details", "size"], "searchTermsAR": ["معلومات", "خصائص", "تفاصيل", "حجم"]
+  },
+  {
+    "id": "go-to-folder", "category": "finder",
+    "windowsShortcut": "Type path in Explorer address bar", "macShortcut": "Cmd+Shift+G",
+    "descriptionEN": "Go to folder by typing path", "descriptionAR": "الانتقال لمجلد بكتابة المسار",
+    "searchTermsEN": ["path", "navigate", "address", "go to"], "searchTermsAR": ["مسار", "انتقال", "عنوان"]
+  },
+  {
+    "id": "screenshot-full", "category": "screenshots",
+    "windowsShortcut": "Print Screen", "macShortcut": "Cmd+Shift+3",
+    "descriptionEN": "Capture full screen", "descriptionAR": "تصوير الشاشة كاملة",
+    "searchTermsEN": ["screenshot", "screen", "capture", "full"], "searchTermsAR": ["سكرين شوت", "شاشة", "تصوير"]
+  },
+  {
+    "id": "screenshot-area", "category": "screenshots",
+    "windowsShortcut": "Win+Shift+S (Snipping Tool)", "macShortcut": "Cmd+Shift+4",
+    "descriptionEN": "Capture selected area", "descriptionAR": "تصوير منطقة محددة",
+    "searchTermsEN": ["screenshot", "snip", "area", "selection", "crop"], "searchTermsAR": ["سكرين شوت", "منطقة", "اختيار"]
+  },
+  {
+    "id": "screenshot-window", "category": "screenshots",
+    "windowsShortcut": "Alt+Print Screen", "macShortcut": "Cmd+Shift+4 then Space",
+    "descriptionEN": "Capture a specific window", "descriptionAR": "تصوير نافذة معينة",
+    "searchTermsEN": ["screenshot", "window", "capture"], "searchTermsAR": ["سكرين شوت", "نافذة", "تصوير"]
+  },
+  {
+    "id": "screenshot-toolbar", "category": "screenshots",
+    "windowsShortcut": "Win+Shift+S", "macShortcut": "Cmd+Shift+5",
+    "descriptionEN": "Screenshot toolbar (includes screen recording)", "descriptionAR": "شريط أدوات السكرين شوت (يشمل تسجيل الشاشة)",
+    "searchTermsEN": ["record", "video", "screen recording", "toolbar"], "searchTermsAR": ["تسجيل", "فيديو", "شاشة"]
+  },
+  {
+    "id": "spotlight", "category": "system",
+    "windowsShortcut": "Win key (Start Menu)", "macShortcut": "Cmd+Space",
+    "descriptionEN": "Open Spotlight search — find apps, files, calculations, anything", "descriptionAR": "فتح Spotlight — لاقي تطبيقات، ملفات، حسابات، أي حاجة",
+    "searchTermsEN": ["spotlight", "search", "launch", "open", "find"], "searchTermsAR": ["بحث", "فتح", "تشغيل"]
+  },
+  {
+    "id": "force-quit", "category": "system",
+    "windowsShortcut": "Ctrl+Alt+Del", "macShortcut": "Cmd+Option+Esc",
+    "descriptionEN": "Force quit an unresponsive app", "descriptionAR": "إغلاق تطبيق مش بيستجيب بالقوة",
+    "searchTermsEN": ["force quit", "kill", "freeze", "hang", "stuck", "task manager"], "searchTermsAR": ["إغلاق بالقوة", "معلق", "هنج"]
+  },
+  {
+    "id": "lock-screen", "category": "system",
+    "windowsShortcut": "Win+L", "macShortcut": "Cmd+Ctrl+Q",
+    "descriptionEN": "Lock your screen", "descriptionAR": "قفل الشاشة",
+    "searchTermsEN": ["lock", "screen", "security"], "searchTermsAR": ["قفل", "شاشة", "أمان"]
+  },
+  {
+    "id": "switch-apps", "category": "system",
+    "windowsShortcut": "Alt+Tab", "macShortcut": "Cmd+Tab",
+    "descriptionEN": "Switch between open apps", "descriptionAR": "التنقل بين التطبيقات المفتوحة",
+    "searchTermsEN": ["switch", "apps", "tab", "alt tab"], "searchTermsAR": ["تنقل", "تطبيقات", "تبديل"]
+  },
+  {
+    "id": "switch-windows", "category": "system",
+    "windowsShortcut": "Alt+Tab (shows all windows)", "macShortcut": "Cmd+` (windows of same app)",
+    "descriptionEN": "Switch between windows of the same app", "descriptionAR": "التنقل بين نوافذ نفس التطبيق",
+    "searchTermsEN": ["switch", "windows", "same app"], "searchTermsAR": ["تنقل", "نوافذ", "نفس التطبيق"]
+  },
+  {
+    "id": "mission-control", "category": "system",
+    "windowsShortcut": "Win+Tab (Task View)", "macShortcut": "Ctrl+Up (or 3-finger swipe up)",
+    "descriptionEN": "Mission Control — see all windows and desktops", "descriptionAR": "Mission Control — شوف كل النوافذ والـ desktops",
+    "searchTermsEN": ["mission control", "overview", "expose", "desktops", "spaces"], "searchTermsAR": ["ميشن كنترول", "نوافذ", "ديسكتوب"]
+  },
+  {
+    "id": "hide-app", "category": "system",
+    "windowsShortcut": "Minimize (Win+Down)", "macShortcut": "Cmd+H",
+    "descriptionEN": "Hide current app (not minimize — hides all its windows)", "descriptionAR": "إخفاء التطبيق الحالي (مش تصغير — بيخفي كل نوافذه)",
+    "searchTermsEN": ["hide", "minimize", "background"], "searchTermsAR": ["إخفاء", "تصغير"]
+  },
+  {
+    "id": "preferences", "category": "system",
+    "windowsShortcut": "Various (often in Tools menu)", "macShortcut": "Cmd+, (comma)",
+    "descriptionEN": "Open app preferences/settings — works in almost every Mac app", "descriptionAR": "فتح إعدادات التطبيق — بيشتغل في تقريبا كل تطبيقات الماك",
+    "searchTermsEN": ["preferences", "settings", "options", "config"], "searchTermsAR": ["إعدادات", "تفضيلات", "خيارات"]
+  }
+]

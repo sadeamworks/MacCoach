@@ -10,9 +10,11 @@
 		13B3B5A50FC7DB3AECCB9BF5 /* LocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F965AF4CBF872DF3175A8386 /* LocaleManager.swift */; };
 		1BC4B1F953661DAFDE0C05E2 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A45B28620E61DD682CE99 /* Lesson.swift */; };
 		2089B9885AABE13499411E14 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C791194FFD02335EE5F174 /* WelcomeView.swift */; };
+		2538EE6DA12ABC29E18EAA34 /* ShortcutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4265AC74605F5C7740B8C /* ShortcutRow.swift */; };
 		44643368A455BFFCF27B650C /* ShortcutEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731F0CEF5450C9C2D9B1F15 /* ShortcutEntry.swift */; };
 		46AAC22558D12FFC2BF0A822 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F842795D9335F844BB775B /* ProgressBar.swift */; };
 		47AC856A474745E509522DD5 /* PopoverContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E02314E650B2551EEF57F4 /* PopoverContentView.swift */; };
+		55F407EEC87AA60D17D07D48 /* CheatSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69C30BF8DFC1E53E9594AE /* CheatSheetView.swift */; };
 		66E142549868DCF739D34210 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4224B412B191D41B6BE583 /* DashboardView.swift */; };
 		854C9FAC00F6E15546B3B80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */; };
 		8BF7755A63A6B024069B6EC9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D83EB4EBBD1D9830ABB90B /* CardView.swift */; };
@@ -47,6 +49,7 @@
 		54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CA0B7A08810A70A4977B46 /* MacCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F842795D9335F844BB775B /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		7F69C30BF8DFC1E53E9594AE /* CheatSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetView.swift; sourceTree = "<group>"; };
 		8235C53CEDD894C60E403688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886BF131B400C83FC90A732D /* MacCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D83EB4EBBD1D9830ABB90B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		CC2A45B28620E61DD682CE99 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		CF00FEF1928AC2656160D987 /* MacCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCoachTests.swift; sourceTree = "<group>"; };
 		D516621BD0ABB96780438441 /* LanguageToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageToggle.swift; sourceTree = "<group>"; };
+		DAA4265AC74605F5C7740B8C /* ShortcutRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRow.swift; sourceTree = "<group>"; };
 		F965AF4CBF872DF3175A8386 /* LocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				96D83EB4EBBD1D9830ABB90B /* CardView.swift */,
+				7F69C30BF8DFC1E53E9594AE /* CheatSheetView.swift */,
 				AE4224B412B191D41B6BE583 /* DashboardView.swift */,
 				CA8C125A16616B569596F2D3 /* LessonView.swift */,
 				15E02314E650B2551EEF57F4 /* PopoverContentView.swift */,
@@ -136,6 +141,7 @@
 				D516621BD0ABB96780438441 /* LanguageToggle.swift */,
 				1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */,
 				65F842795D9335F844BB775B /* ProgressBar.swift */,
+				DAA4265AC74605F5C7740B8C /* ShortcutRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 			files = (
 				854C9FAC00F6E15546B3B80D /* AppDelegate.swift in Sources */,
 				8BF7755A63A6B024069B6EC9 /* CardView.swift in Sources */,
+				55F407EEC87AA60D17D07D48 /* CheatSheetView.swift in Sources */,
 				E10DAB78BDC0A98C4410E220 /* ContentStore.swift in Sources */,
 				66E142549868DCF739D34210 /* DashboardView.swift in Sources */,
 				E3E513E0333F91B128D83CA3 /* LanguageToggle.swift in Sources */,
@@ -258,6 +265,7 @@
 				46AAC22558D12FFC2BF0A822 /* ProgressBar.swift in Sources */,
 				DBCEB746850E8BA35647FECF /* ProgressStore.swift in Sources */,
 				44643368A455BFFCF27B650C /* ShortcutEntry.swift in Sources */,
+				2538EE6DA12ABC29E18EAA34 /* ShortcutRow.swift in Sources */,
 				2089B9885AABE13499411E14 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
