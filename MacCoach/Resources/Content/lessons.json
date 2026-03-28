@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "window-management",
+    "titleEN": "Window Management",
+    "titleAR": "إدارة النوافذ",
+    "hookEN": "Why the green button doesn't do what you think",
+    "hookAR": "ليه الزرار الأخضر مش بيعمل اللي انت فاكره",
+    "icon": "macwindow.on.rectangle",
+    "order": 1,
+    "cards": []
+  },
+  {
+    "id": "keyboard-shortcuts",
+    "titleEN": "Keyboard Shortcuts",
+    "titleAR": "اختصارات الكيبورد",
+    "hookEN": "Cmd is your new Ctrl — and 20 shortcuts to learn now",
+    "hookAR": "Cmd هو الـ Ctrl الجديد — و٢٠ اختصار لازم تعرفهم",
+    "icon": "keyboard",
+    "order": 2,
+    "cards": []
+  },
+  {
+    "id": "finder-survival",
+    "titleEN": "Finder Survival Guide",
+    "titleAR": "دليل النجاة في Finder",
+    "hookEN": "It's not File Explorer — and Cut works differently",
+    "hookAR": "مش زي File Explorer — والقص شغال بطريقة مختلفة",
+    "icon": "folder",
+    "order": 3,
+    "cards": []
+  },
+  {
+    "id": "trackpad-gestures",
+    "titleEN": "Trackpad Gestures",
+    "titleAR": "إيماءات التراكباد",
+    "hookEN": "The 7 gestures that replace your mouse clicks",
+    "hookAR": "٧ حركات هتخليك تستغنى عن الماوس",
+    "icon": "hand.draw",
+    "order": 4,
+    "cards": []
+  },
+  {
+    "id": "apps-and-dock",
+    "titleEN": "Apps & the Dock",
+    "titleAR": "التطبيقات والـ Dock",
+    "hookEN": "Why closing a window doesn't quit the app",
+    "hookAR": "ليه لما تقفل النافذة التطبيق بيفضل شغال",
+    "icon": "dock.rectangle",
+    "order": 5,
+    "cards": []
+  },
+  {
+    "id": "spotlight-search",
+    "titleEN": "Spotlight & Search",
+    "titleAR": "Spotlight والبحث",
+    "hookEN": "Find anything instantly with one shortcut",
+    "hookAR": "لاقي أي حاجة في ثانية باختصار واحد",
+    "icon": "magnifyingglass",
+    "order": 6,
+    "cards": []
+  }
+]

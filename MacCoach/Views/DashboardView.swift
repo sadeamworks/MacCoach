@@ -4,11 +4,13 @@ struct DashboardView: View {
     @Environment(ProgressStore.self) private var progressStore
     @Environment(LocaleManager.self) private var localeManager
 
+    private let lessons = ContentStore.shared.lessons
+
     var body: some View {
         VStack(spacing: 0) {
             // Header
             HStack {
-                Text(localeManager.isArabic ? "Mac Coach" : "Mac Coach")
+                Text("Mac Coach")
                     .font(.headline)
                 Spacer()
                 LanguageToggle()
@@ -17,21 +19,34 @@ struct DashboardView: View {
             .padding(.top, 12)
             .padding(.bottom, 8)
 
-            // Progress bar placeholder
-            ProgressBar(completed: 0, total: 6)
-                .padding(.horizontal, 16)
-                .padding(.bottom, 12)
+            // Progress
+            ProgressBar(
+                completed: progressStore.completedLessons.count,
+                total: lessons.count,
+                language: localeManager.selectedLanguage
+            )
+            .padding(.horizontal, 16)
+            .padding(.bottom, 12)
 
             Divider()
 
-            // Lesson list placeholder
+            // Lesson list
             ScrollView {
                 VStack(spacing: 8) {
-                    Text(localeManager.isArabic ? "الدروس قريبا..." : "Lessons coming soon...")
-                        .foregroundStyle(.secondary)
-                        .frame(maxWidth: .infinity, minHeight: 200)
+                    ForEach(lessons) { lesson in
+                        LessonCard(
+                            lesson: lesson,
+                            language: localeManager.selectedLanguage,
+                            isComplete: progressStore.isLessonComplete(lesson.id),
+                            isInProgress: progressStore.cardProgress(for: lesson.id) > 0
+                                && !progressStore.isLessonComplete(lesson.id),
+                            onTap: {
+                                // Lesson view comes in Slice 2
+                            }
+                        )
+                    }
                 }
-                .padding(16)
+                .padding(12)
             }
         }
         .environment(\.layoutDirection, localeManager.isArabic ? .rightToLeft : .leftToRight)

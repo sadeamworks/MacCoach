@@ -15,6 +15,7 @@
 		47AC856A474745E509522DD5 /* PopoverContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E02314E650B2551EEF57F4 /* PopoverContentView.swift */; };
 		66E142549868DCF739D34210 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4224B412B191D41B6BE583 /* DashboardView.swift */; };
 		854C9FAC00F6E15546B3B80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */; };
+		AF48BB3D2DC4F5F9DC598E50 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */; };
 		CCCB2422EE444BE4257F308A /* MacCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873899A75A4214388137B8B /* MacCoachApp.swift */; };
 		D4C3203B852DE26913B20722 /* MacCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00FEF1928AC2656160D987 /* MacCoachTests.swift */; };
 		DBCEB746850E8BA35647FECF /* ProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38FD6B61417183ECEBB58A /* ProgressStore.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0189D0DD2DB7A11B7AF1CC09 /* MacCoach.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacCoach.entitlements; sourceTree = "<group>"; };
+		1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCard.swift; sourceTree = "<group>"; };
 		15E02314E650B2551EEF57F4 /* PopoverContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentView.swift; sourceTree = "<group>"; };
 		1D38FD6B61417183ECEBB58A /* ProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStore.swift; sourceTree = "<group>"; };
 		2731F0CEF5450C9C2D9B1F15 /* ShortcutEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutEntry.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				D516621BD0ABB96780438441 /* LanguageToggle.swift */,
+				1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */,
 				65F842795D9335F844BB775B /* ProgressBar.swift */,
 			);
 			path = Components;
@@ -240,6 +243,7 @@
 				66E142549868DCF739D34210 /* DashboardView.swift in Sources */,
 				E3E513E0333F91B128D83CA3 /* LanguageToggle.swift in Sources */,
 				1BC4B1F953661DAFDE0C05E2 /* Lesson.swift in Sources */,
+				AF48BB3D2DC4F5F9DC598E50 /* LessonCard.swift in Sources */,
 				13B3B5A50FC7DB3AECCB9BF5 /* LocaleManager.swift in Sources */,
 				CCCB2422EE444BE4257F308A /* MacCoachApp.swift in Sources */,
 				47AC856A474745E509522DD5 /* PopoverContentView.swift in Sources */,
