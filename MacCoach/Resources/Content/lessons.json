@@ -17,8 +17,8 @@
         "explanationEN": "On Mac, the green button enters fullscreen mode by default — it hides the menu bar and Dock. To maximize like Windows (fill the screen but keep the menu bar), hold Option and click the green button instead.",
         "explanationAR": "على الماك، الزرار الأخضر بيدخلك وضع الشاشة الكاملة — بيخفي الـ menu bar والـ Dock. عشان تكبّر زي ويندوز (تملا الشاشة بس تفضل شايف الـ menu bar)، اضغط Option وانت بتضغط على الزرار الأخضر.",
         "imageName": null,
-        "tryItPromptEN": "Try it now — hold Option and hover over a green button to see the + icon change",
-        "tryItPromptAR": "جربها دلوقتي — اضغط Option وحط الماوس على الزرار الأخضر وشوف الأيقونة بتتغير"
+        "tryItPromptEN": "Try it now — open any app window, hold Option, and hover over its green button to see the + icon change",
+        "tryItPromptAR": "جربها دلوقتي — افتح أي نافذة تطبيق، اضغط Option وحط الماوس على الزرار الأخضر وشوف الأيقونة بتتغير"
       },
       {
         "id": "wm-2",
@@ -29,8 +29,8 @@
         "explanationEN": "macOS now supports window snapping! Drag a window to the left or right edge and it snaps to half the screen. You can also hover over the green button to see tiling options — left half, right half, or split with another app.",
         "explanationAR": "macOS دلوقتي بيدعم تقسيم النوافذ! اسحب نافذة لليمين أو الشمال وهتتقسم نص الشاشة. كمان ممكن تحط الماوس على الزرار الأخضر وهتلاقي خيارات — نص شمال، نص يمين، أو تقسيم مع تطبيق تاني.",
         "imageName": null,
-        "tryItPromptEN": "Try it now — drag this popover to the left edge of your screen",
-        "tryItPromptAR": "جربها دلوقتي — اسحب أي نافذة لطرف الشاشة"
+        "tryItPromptEN": "Try it now — open a Finder or Safari window and drag it to the left edge of your screen",
+        "tryItPromptAR": "جربها دلوقتي — افتح نافذة Finder أو Safari واسحبها لطرف الشاشة"
       },
       {
         "id": "wm-3",
@@ -76,8 +76,8 @@
         "explanationEN": "Almost every shortcut that uses Ctrl on Windows uses Cmd on Mac instead. The Cmd key is right next to the spacebar (where Alt is on Windows keyboards). Your thumb reaches it naturally. Copy, paste, cut, undo, save, print — just swap Ctrl for Cmd.",
         "explanationAR": "تقريبا كل اختصار بيستخدم Ctrl في ويندوز بيستخدم Cmd في الماك. زرار Cmd جنب المسافة (مكان Alt في كيبورد ويندوز). صباعك بيوصله بسهولة. نسخ، لصق، قص، تراجع، حفظ — بس بدّل Ctrl بـ Cmd.",
         "imageName": null,
-        "tryItPromptEN": "Try it now — select some text and press Cmd+C to copy, then Cmd+V to paste",
-        "tryItPromptAR": "جربها دلوقتي — حدد نص واضغط Cmd+C للنسخ، وبعدين Cmd+V للصق"
+        "tryItPromptEN": "Try it now — open Notes or TextEdit, select some text, and press Cmd+C then Cmd+V",
+        "tryItPromptAR": "جربها دلوقتي — افتح Notes أو TextEdit، حدد نص، واضغط Cmd+C وبعدين Cmd+V"
       },
       {
         "id": "kb-2",
@@ -112,8 +112,8 @@
         "explanationEN": "On Mac, the Delete key works like Backspace (deletes backward). There's no separate forward-delete key. To delete forward, press Fn+Delete. On MacBook keyboards, this is the only way to forward-delete text.",
         "explanationAR": "على الماك، زرار Delete شغال زي Backspace (بيمسح لورا). مفيش زرار مخصوص للمسح لقدام. عشان تمسح لقدام، اضغط Fn+Delete. على كيبورد الماكبوك، دي الطريقة الوحيدة.",
         "imageName": null,
-        "tryItPromptEN": "Try it now — place your cursor in the middle of some text and try both Delete and Fn+Delete",
-        "tryItPromptAR": "جربها دلوقتي — حط الكرسور في نص نص واضغط Delete وبعدين Fn+Delete"
+        "tryItPromptEN": "Try it now — open TextEdit, type some words, place your cursor in the middle, and try Delete vs Fn+Delete",
+        "tryItPromptAR": "جربها دلوقتي — افتح TextEdit، اكتب كلمتين، حط الكرسور في النص واضغط Delete وبعدين Fn+Delete"
       },
       {
         "id": "kb-5",
@@ -147,8 +147,8 @@
         "explanationEN": "Finder has 4 view modes: Icon (Cmd+1), List (Cmd+2), Column (Cmd+3), and Gallery (Cmd+4). Column view is closest to Windows Explorer — you drill into folders left to right. The sidebar on the left shows favorites, drives, and network locations.",
         "explanationAR": "Finder عنده ٤ طرق عرض: أيقونات (Cmd+1)، قائمة (Cmd+2)، أعمدة (Cmd+3)، ومعرض (Cmd+4). عرض الأعمدة أقرب حاجة لـ Windows Explorer — بتتنقل في المجلدات من شمال ليمين. الشريط الجانبي على الشمال فيه المفضلة والأقراص.",
         "imageName": null,
-        "tryItPromptEN": "Try it now — open Finder (Cmd+N from Desktop) and press Cmd+3 for column view",
-        "tryItPromptAR": "جربها دلوقتي — افتح Finder (اضغط Cmd+N من الـ Desktop) واضغط Cmd+3 لعرض الأعمدة"
+        "tryItPromptEN": "Try it now — click the Finder icon in your Dock, then press Cmd+3 for column view",
+        "tryItPromptAR": "جربها دلوقتي — اضغط على أيقونة Finder في الـ Dock، وبعدين اضغط Cmd+3 لعرض الأعمدة"
       },
       {
         "id": "finder-2",
@@ -206,8 +206,8 @@
         "explanationEN": "Mac's trackpad doesn't have separate buttons. To right-click, click or tap with two fingers anywhere on the trackpad. You can also hold Control and click. This works everywhere — Finder, Safari, apps, the Desktop.",
         "explanationAR": "تراكباد الماك مفيهوش أزرار منفصلة. عشان تعمل كليك يمين، اضغط أو انقر بصباعين في أي مكان على التراكباد. كمان ممكن تضغط Control وتعمل كليك. ده بيشتغل في كل مكان — Finder، Safari، التطبيقات، الـ Desktop.",
         "imageName": null,
-        "tryItPromptEN": "Try it now — tap with two fingers on the trackpad to see a context menu",
-        "tryItPromptAR": "جربها دلوقتي — انقر بصباعين على التراكباد تشوف قائمة الخيارات"
+        "tryItPromptEN": "Try it now — move your cursor to your Desktop and tap with two fingers to see a context menu",
+        "tryItPromptAR": "جربها دلوقتي — حرّك الماوس للـ Desktop وانقر بصباعين عشان تشوف قائمة الخيارات"
       },
       {
         "id": "tp-2",
@@ -218,8 +218,8 @@
         "explanationEN": "Swipe up with two fingers to scroll down (content moves up). This is called 'natural scrolling' — imagine you're pushing the page with your fingers. If it feels backwards, you can change it: System Settings → Trackpad → Scroll & Zoom → uncheck 'Natural scrolling.'",
         "explanationAR": "اسحب بصباعين لفوق عشان تسكرول لتحت (المحتوى بيتحرك لفوق). ده اسمه 'سكرول طبيعي' — تخيل إنك بتدفع الصفحة بصوابعك. لو حاسس إنه معكوس، ممكن تغيره: System Settings → Trackpad → Scroll & Zoom → شيل علامة 'Natural scrolling.'",
         "imageName": null,
-        "tryItPromptEN": "Try it now — two-finger swipe on this popover to scroll through content",
-        "tryItPromptAR": "جربها دلوقتي — اسحب بصباعين على البوب أوفر ده عشان تسكرول"
+        "tryItPromptEN": "Try it now — open any long webpage in Safari and try two-finger swiping up and down",
+        "tryItPromptAR": "جربها دلوقتي — افتح أي صفحة طويلة في Safari وجرب تسحب بصباعين لفوق ولتحت"
       },
       {
         "id": "tp-3",
@@ -265,8 +265,8 @@
         "explanationEN": "This is the #1 surprise for Windows switchers! Clicking the red X button only closes the window — the app stays running (you'll see a dot under its Dock icon). To actually quit the app, press Cmd+Q or right-click its Dock icon and choose Quit. Some apps (like Music) are designed to run in the background.",
         "explanationAR": "دي أكبر مفاجأة لأي حد جاي من ويندوز! الضغط على الزرار الأحمر بيقفل النافذة بس — التطبيق بيفضل شغال (هتشوف نقطة تحت أيقونته في الـ Dock). عشان تقفل التطبيق فعلا، اضغط Cmd+Q أو كليك يمين على أيقونته في الـ Dock واختار Quit.",
         "imageName": null,
-        "tryItPromptEN": "Try it now — close a Safari window with the red X, then check the Dock — Safari is still running!",
-        "tryItPromptAR": "جربها دلوقتي — اقفل نافذة Safari بالزرار الأحمر، وبعدين بص على الـ Dock — Safari لسه شغال!"
+        "tryItPromptEN": "Try it now — open Safari, close its window with the red X, then look at the Dock — Safari is still running!",
+        "tryItPromptAR": "جربها دلوقتي — افتح Safari، اقفل النافذة بالزرار الأحمر، وبعدين بص على الـ Dock — Safari لسه شغال!"
       },
       {
         "id": "dock-2",
