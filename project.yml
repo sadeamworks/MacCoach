@@ -18,12 +18,10 @@ targets:
     platform: macOS
     sources:
       - path: MacCoach
-        excludes:
-          - "Resources/Content/**"
     resources:
       - path: MacCoach/Resources/Assets.xcassets
-      - path: MacCoach/Resources/Content
-      - path: MacCoach/Resources/MacCoach.entitlements
+      - path: MacCoach/Resources/Content/lessons.json
+      - path: MacCoach/Resources/Content/shortcuts.json
     settings:
       base:
         INFOPLIST_KEY_LSUIElement: true

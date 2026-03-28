@@ -30,11 +30,8 @@ struct CardView: View {
                         )
                 }
 
-                // Arrow
-                Image(systemName: "arrow.down")
-                    .font(.title3)
-                    .foregroundStyle(Color.accentColor)
-                    .frame(maxWidth: .infinity)
+                // Illustration
+                CardIllustration(cardId: card.id)
 
                 // "On Mac you do..."
                 VStack(alignment: .leading, spacing: 4) {

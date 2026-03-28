@@ -17,15 +17,18 @@
 		55F407EEC87AA60D17D07D48 /* CheatSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69C30BF8DFC1E53E9594AE /* CheatSheetView.swift */; };
 		66E142549868DCF739D34210 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4224B412B191D41B6BE583 /* DashboardView.swift */; };
 		854C9FAC00F6E15546B3B80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */; };
+		8A1CA92AE65F8C2A8FFCAA82 /* CardIllustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DBD0020216A42A5607B92D /* CardIllustration.swift */; };
 		8BF7755A63A6B024069B6EC9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D83EB4EBBD1D9830ABB90B /* CardView.swift */; };
 		8D8A9F66AE54D58B9717F4F8 /* GlobalHotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64E46918277CD5AA36D389 /* GlobalHotKey.swift */; };
 		91E5490938B7E6139C4A746C /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C125A16616B569596F2D3 /* LessonView.swift */; };
+		AA83ADAA8AC22C9F7E58D18B /* shortcuts.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C746EE7F899AE8CA5D618B /* shortcuts.json */; };
 		AF48BB3D2DC4F5F9DC598E50 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */; };
 		CCCB2422EE444BE4257F308A /* MacCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873899A75A4214388137B8B /* MacCoachApp.swift */; };
 		D4C3203B852DE26913B20722 /* MacCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00FEF1928AC2656160D987 /* MacCoachTests.swift */; };
 		DBCEB746850E8BA35647FECF /* ProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38FD6B61417183ECEBB58A /* ProgressStore.swift */; };
 		E10DAB78BDC0A98C4410E220 /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16B67EEA5C2CE28020D251E /* ContentStore.swift */; };
 		E3E513E0333F91B128D83CA3 /* LanguageToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516621BD0ABB96780438441 /* LanguageToggle.swift */; };
+		ECF8A9154B815E566590A7CD /* lessons.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D0E010AA63C938369669F7 /* lessons.json */; };
 		FAE4204EBA54107B80D523DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8235C53CEDD894C60E403688 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0189D0DD2DB7A11B7AF1CC09 /* MacCoach.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacCoach.entitlements; sourceTree = "<group>"; };
+		03C746EE7F899AE8CA5D618B /* shortcuts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shortcuts.json; sourceTree = "<group>"; };
 		1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCard.swift; sourceTree = "<group>"; };
 		15E02314E650B2551EEF57F4 /* PopoverContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentView.swift; sourceTree = "<group>"; };
 		1D38FD6B61417183ECEBB58A /* ProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStore.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CA0B7A08810A70A4977B46 /* MacCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F842795D9335F844BB775B /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		75D0E010AA63C938369669F7 /* lessons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lessons.json; sourceTree = "<group>"; };
 		7F69C30BF8DFC1E53E9594AE /* CheatSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetView.swift; sourceTree = "<group>"; };
 		8235C53CEDD894C60E403688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886BF131B400C83FC90A732D /* MacCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +68,7 @@
 		D516621BD0ABB96780438441 /* LanguageToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageToggle.swift; sourceTree = "<group>"; };
 		DAA4265AC74605F5C7740B8C /* ShortcutRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRow.swift; sourceTree = "<group>"; };
 		F965AF4CBF872DF3175A8386 /* LocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleManager.swift; sourceTree = "<group>"; };
+		F9DBD0020216A42A5607B92D /* CardIllustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIllustration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -141,6 +147,7 @@
 		D01427A20A73C427A467D425 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F9DBD0020216A42A5607B92D /* CardIllustration.swift */,
 				D516621BD0ABB96780438441 /* LanguageToggle.swift */,
 				1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */,
 				65F842795D9335F844BB775B /* ProgressBar.swift */,
@@ -163,8 +170,18 @@
 			children = (
 				8235C53CEDD894C60E403688 /* Assets.xcassets */,
 				0189D0DD2DB7A11B7AF1CC09 /* MacCoach.entitlements */,
+				F9943DB49573EF4E694F9951 /* Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9943DB49573EF4E694F9951 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				75D0E010AA63C938369669F7 /* lessons.json */,
+				03C746EE7F899AE8CA5D618B /* shortcuts.json */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 		FECDD9EF9F2CBB587033E5C7 /* Utilities */ = {
@@ -251,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE4204EBA54107B80D523DE /* Assets.xcassets in Resources */,
+				ECF8A9154B815E566590A7CD /* lessons.json in Resources */,
+				AA83ADAA8AC22C9F7E58D18B /* shortcuts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				854C9FAC00F6E15546B3B80D /* AppDelegate.swift in Sources */,
+				8A1CA92AE65F8C2A8FFCAA82 /* CardIllustration.swift in Sources */,
 				8BF7755A63A6B024069B6EC9 /* CardView.swift in Sources */,
 				55F407EEC87AA60D17D07D48 /* CheatSheetView.swift in Sources */,
 				E10DAB78BDC0A98C4410E220 /* ContentStore.swift in Sources */,
