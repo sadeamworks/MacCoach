@@ -113,10 +113,12 @@ struct CheatSheetView: View {
                                 Text("Try searching in English?")
                                     .font(.caption)
                                     .foregroundStyle(.tertiary)
+                                    .environment(\.layoutDirection, .leftToRight)
                             } else {
                                 Text("جرب تبحث بالعربي؟")
                                     .font(.caption)
                                     .foregroundStyle(.tertiary)
+                                    .environment(\.layoutDirection, .rightToLeft)
                             }
                         }
                         .frame(maxWidth: .infinity)

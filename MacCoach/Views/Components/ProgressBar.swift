@@ -36,6 +36,7 @@ struct ProgressBar: View {
                 }
             }
             .frame(height: 6)
+            .environment(\.layoutDirection, .leftToRight)
         }
     }
 }

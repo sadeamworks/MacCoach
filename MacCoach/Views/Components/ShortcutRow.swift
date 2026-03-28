@@ -8,6 +8,8 @@ struct ShortcutRow: View {
 
     @State private var isExpanded = false
 
+    private var isArabic: Bool { language == "ar" }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             // Main row
@@ -27,21 +29,24 @@ struct ShortcutRow: View {
                     }
                     .buttonStyle(.plain)
 
-                    // Windows shortcut
+                    // Windows shortcut — always LTR
                     Text(shortcut.windowsShortcut)
                         .font(.caption.monospaced())
                         .foregroundStyle(.secondary)
                         .frame(width: 90, alignment: .leading)
+                        .environment(\.layoutDirection, .leftToRight)
 
+                    // Arrow stays pointing right (Windows → Mac conversion direction)
                     Image(systemName: "arrow.right")
                         .font(.caption2)
                         .foregroundStyle(.tertiary)
 
-                    // Mac shortcut
+                    // Mac shortcut — always LTR (keyboard keys)
                     Text(shortcut.macShortcut)
                         .font(.caption.monospaced().weight(.semibold))
                         .foregroundStyle(.primary)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .environment(\.layoutDirection, .leftToRight)
 
                     Image(systemName: "chevron.down")
                         .font(.caption2)
@@ -53,8 +58,10 @@ struct ShortcutRow: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
+            // Force LTR for the shortcut row layout — keys should always read left-to-right
+            .environment(\.layoutDirection, .leftToRight)
 
-            // Expanded detail
+            // Expanded detail — follows current language direction
             if isExpanded {
                 Text(shortcut.description(for: language))
                     .font(.caption)
@@ -62,6 +69,8 @@ struct ShortcutRow: View {
                     .padding(.horizontal, 8)
                     .padding(.bottom, 6)
                     .padding(.leading, 24)
+                    .frame(maxWidth: .infinity, alignment: isArabic ? .trailing : .leading)
+                    .environment(\.layoutDirection, isArabic ? .rightToLeft : .leftToRight)
             }
         }
     }

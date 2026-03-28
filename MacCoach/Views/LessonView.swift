@@ -35,6 +35,7 @@ struct LessonView: View {
                 Text("\(currentCardIndex + 1) / \(lesson.cards.count)")
                     .font(.caption)
                     .foregroundStyle(.secondary)
+                    .environment(\.layoutDirection, .leftToRight)
             }
             .padding(.horizontal, 16)
             .padding(.top, 12)

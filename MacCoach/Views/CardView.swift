@@ -23,6 +23,7 @@ struct CardView: View {
                         .font(.subheadline)
                         .padding(10)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .environment(\.layoutDirection, .leftToRight)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .fill(Color.primary.opacity(0.04))
@@ -51,6 +52,7 @@ struct CardView: View {
                         .font(.subheadline.weight(.semibold))
                         .padding(10)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .environment(\.layoutDirection, .leftToRight)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .fill(Color.accentColor.opacity(0.08))
@@ -82,5 +84,6 @@ struct CardView: View {
             }
             .padding(16)
         }
+        .environment(\.layoutDirection, language == "ar" ? .rightToLeft : .leftToRight)
     }
 }
