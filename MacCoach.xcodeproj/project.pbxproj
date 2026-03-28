@@ -15,6 +15,8 @@
 		47AC856A474745E509522DD5 /* PopoverContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E02314E650B2551EEF57F4 /* PopoverContentView.swift */; };
 		66E142549868DCF739D34210 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4224B412B191D41B6BE583 /* DashboardView.swift */; };
 		854C9FAC00F6E15546B3B80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */; };
+		8BF7755A63A6B024069B6EC9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D83EB4EBBD1D9830ABB90B /* CardView.swift */; };
+		91E5490938B7E6139C4A746C /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C125A16616B569596F2D3 /* LessonView.swift */; };
 		AF48BB3D2DC4F5F9DC598E50 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */; };
 		CCCB2422EE444BE4257F308A /* MacCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873899A75A4214388137B8B /* MacCoachApp.swift */; };
 		D4C3203B852DE26913B20722 /* MacCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00FEF1928AC2656160D987 /* MacCoachTests.swift */; };
@@ -47,8 +49,10 @@
 		65F842795D9335F844BB775B /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		8235C53CEDD894C60E403688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886BF131B400C83FC90A732D /* MacCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D83EB4EBBD1D9830ABB90B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AE4224B412B191D41B6BE583 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		C16B67EEA5C2CE28020D251E /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
+		CA8C125A16616B569596F2D3 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 		CC2A45B28620E61DD682CE99 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		CF00FEF1928AC2656160D987 /* MacCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCoachTests.swift; sourceTree = "<group>"; };
 		D516621BD0ABB96780438441 /* LanguageToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageToggle.swift; sourceTree = "<group>"; };
@@ -68,7 +72,9 @@
 		51954CBD5A7A7C22918E8AA8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				96D83EB4EBBD1D9830ABB90B /* CardView.swift */,
 				AE4224B412B191D41B6BE583 /* DashboardView.swift */,
+				CA8C125A16616B569596F2D3 /* LessonView.swift */,
 				15E02314E650B2551EEF57F4 /* PopoverContentView.swift */,
 				38C791194FFD02335EE5F174 /* WelcomeView.swift */,
 				D01427A20A73C427A467D425 /* Components */,
@@ -239,11 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				854C9FAC00F6E15546B3B80D /* AppDelegate.swift in Sources */,
+				8BF7755A63A6B024069B6EC9 /* CardView.swift in Sources */,
 				E10DAB78BDC0A98C4410E220 /* ContentStore.swift in Sources */,
 				66E142549868DCF739D34210 /* DashboardView.swift in Sources */,
 				E3E513E0333F91B128D83CA3 /* LanguageToggle.swift in Sources */,
 				1BC4B1F953661DAFDE0C05E2 /* Lesson.swift in Sources */,
 				AF48BB3D2DC4F5F9DC598E50 /* LessonCard.swift in Sources */,
+				91E5490938B7E6139C4A746C /* LessonView.swift in Sources */,
 				13B3B5A50FC7DB3AECCB9BF5 /* LocaleManager.swift in Sources */,
 				CCCB2422EE444BE4257F308A /* MacCoachApp.swift in Sources */,
 				47AC856A474745E509522DD5 /* PopoverContentView.swift in Sources */,

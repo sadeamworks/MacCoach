@@ -4,6 +4,8 @@ struct DashboardView: View {
     @Environment(ProgressStore.self) private var progressStore
     @Environment(LocaleManager.self) private var localeManager
 
+    let onSelectLesson: (Lesson) -> Void
+
     private let lessons = ContentStore.shared.lessons
 
     var body: some View {
@@ -41,7 +43,7 @@ struct DashboardView: View {
                             isInProgress: progressStore.cardProgress(for: lesson.id) > 0
                                 && !progressStore.isLessonComplete(lesson.id),
                             onTap: {
-                                // Lesson view comes in Slice 2
+                                onSelectLesson(lesson)
                             }
                         )
                     }

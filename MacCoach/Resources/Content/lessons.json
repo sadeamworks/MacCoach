@@ -7,7 +7,56 @@
     "hookAR": "ليه الزرار الأخضر مش بيعمل اللي انت فاكره",
     "icon": "macwindow.on.rectangle",
     "order": 1,
-    "cards": []
+    "cards": [
+      {
+        "id": "wm-1",
+        "windowsLabelEN": "Click the maximize button to fill the screen",
+        "windowsLabelAR": "بتضغط على زرار التكبير عشان النافذة تملا الشاشة",
+        "macLabelEN": "Option + Click the green button to maximize (not fullscreen)",
+        "macLabelAR": "اضغط Option + الزرار الأخضر عشان تكبّر النافذة (مش fullscreen)",
+        "explanationEN": "On Mac, the green button enters fullscreen mode by default — it hides the menu bar and Dock. To maximize like Windows (fill the screen but keep the menu bar), hold Option and click the green button instead.",
+        "explanationAR": "على الماك، الزرار الأخضر بيدخلك وضع الشاشة الكاملة — بيخفي الـ menu bar والـ Dock. عشان تكبّر زي ويندوز (تملا الشاشة بس تفضل شايف الـ menu bar)، اضغط Option وانت بتضغط على الزرار الأخضر.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — hold Option and hover over a green button to see the + icon change",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Option وحط الماوس على الزرار الأخضر وشوف الأيقونة بتتغير"
+      },
+      {
+        "id": "wm-2",
+        "windowsLabelEN": "Drag a window to the edge to snap it to half the screen",
+        "windowsLabelAR": "بتسحب النافذة لطرف الشاشة عشان تتقسم نص",
+        "macLabelEN": "Drag to the screen edge, or hover over the green button for snap options",
+        "macLabelAR": "اسحب النافذة لطرف الشاشة، أو حط الماوس على الزرار الأخضر لخيارات التقسيم",
+        "explanationEN": "macOS now supports window snapping! Drag a window to the left or right edge and it snaps to half the screen. You can also hover over the green button to see tiling options — left half, right half, or split with another app.",
+        "explanationAR": "macOS دلوقتي بيدعم تقسيم النوافذ! اسحب نافذة لليمين أو الشمال وهتتقسم نص الشاشة. كمان ممكن تحط الماوس على الزرار الأخضر وهتلاقي خيارات — نص شمال، نص يمين، أو تقسيم مع تطبيق تاني.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — drag this popover to the left edge of your screen",
+        "tryItPromptAR": "جربها دلوقتي — اسحب أي نافذة لطرف الشاشة"
+      },
+      {
+        "id": "wm-3",
+        "windowsLabelEN": "Alt+Tab to switch between windows",
+        "windowsLabelAR": "Alt+Tab عشان تتنقل بين النوافذ",
+        "macLabelEN": "Cmd+Tab switches apps. Cmd+` switches windows within the same app",
+        "macLabelAR": "Cmd+Tab بيتنقل بين التطبيقات. Cmd+` بيتنقل بين نوافذ نفس التطبيق",
+        "explanationEN": "Mac separates app switching from window switching. Cmd+Tab shows all running apps (like a carousel). To switch between multiple windows of the SAME app (like two Chrome windows), use Cmd+` (the key above Tab).",
+        "explanationAR": "الماك بيفصل التنقل بين التطبيقات عن التنقل بين النوافذ. Cmd+Tab بيعرض كل التطبيقات المفتوحة. عشان تتنقل بين نوافذ نفس التطبيق (زي نافذتين Chrome)، استخدم Cmd+` (الزرار اللي فوق Tab).",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Tab to see your open apps, then Cmd+` to switch windows",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Tab تشوف التطبيقات، وبعدين Cmd+` تتنقل بين النوافذ"
+      },
+      {
+        "id": "wm-4",
+        "windowsLabelEN": "Win+Tab or Task View to see all windows",
+        "windowsLabelAR": "Win+Tab أو Task View عشان تشوف كل النوافذ",
+        "macLabelEN": "Swipe up with 3 fingers (or Ctrl+Up) for Mission Control",
+        "macLabelAR": "اسحب لفوق بـ ٣ صوابع (أو Ctrl+Up) لـ Mission Control",
+        "explanationEN": "Mission Control shows ALL your open windows at once, grouped by app. You can also see your virtual desktops (Spaces) at the top. Click any window to jump to it. This is one of macOS's best features — use it often!",
+        "explanationAR": "Mission Control بيعرض كل النوافذ المفتوحة مرة واحدة، متجمعة حسب التطبيق. كمان بتشوف الـ desktops الافتراضية (Spaces) فوق. اضغط على أي نافذة تروح ليها. دي من أحسن مميزات macOS!",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — swipe up with 3 fingers on your trackpad",
+        "tryItPromptAR": "جربها دلوقتي — اسحب لفوق بـ ٣ صوابع على التراكباد"
+      }
+    ]
   },
   {
     "id": "keyboard-shortcuts",
@@ -17,7 +66,68 @@
     "hookAR": "Cmd هو الـ Ctrl الجديد — و٢٠ اختصار لازم تعرفهم",
     "icon": "keyboard",
     "order": 2,
-    "cards": []
+    "cards": [
+      {
+        "id": "kb-1",
+        "windowsLabelEN": "Ctrl+C, Ctrl+V, Ctrl+X for copy, paste, cut",
+        "windowsLabelAR": "Ctrl+C, Ctrl+V, Ctrl+X للنسخ واللصق والقص",
+        "macLabelEN": "Cmd+C, Cmd+V, Cmd+X — same actions, different key",
+        "macLabelAR": "Cmd+C, Cmd+V, Cmd+X — نفس الحركة، زرار مختلف",
+        "explanationEN": "Almost every shortcut that uses Ctrl on Windows uses Cmd on Mac instead. The Cmd key is right next to the spacebar (where Alt is on Windows keyboards). Your thumb reaches it naturally. Copy, paste, cut, undo, save, print — just swap Ctrl for Cmd.",
+        "explanationAR": "تقريبا كل اختصار بيستخدم Ctrl في ويندوز بيستخدم Cmd في الماك. زرار Cmd جنب المسافة (مكان Alt في كيبورد ويندوز). صباعك بيوصله بسهولة. نسخ، لصق، قص، تراجع، حفظ — بس بدّل Ctrl بـ Cmd.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — select some text and press Cmd+C to copy, then Cmd+V to paste",
+        "tryItPromptAR": "جربها دلوقتي — حدد نص واضغط Cmd+C للنسخ، وبعدين Cmd+V للصق"
+      },
+      {
+        "id": "kb-2",
+        "windowsLabelEN": "Ctrl+Alt+Del or Task Manager to force quit",
+        "windowsLabelAR": "Ctrl+Alt+Del أو Task Manager عشان تقفل برنامج بالقوة",
+        "macLabelEN": "Cmd+Option+Esc opens Force Quit (or right-click app in Dock)",
+        "macLabelAR": "Cmd+Option+Esc بيفتح Force Quit (أو كليك يمين على التطبيق في الـ Dock)",
+        "explanationEN": "When an app freezes on Mac, press Cmd+Option+Esc to open the Force Quit window. Select the frozen app and click Force Quit. You can also right-click (or Option+click) the app's Dock icon and choose Force Quit from there.",
+        "explanationAR": "لما تطبيق يهنج على الماك، اضغط Cmd+Option+Esc عشان تفتح نافذة Force Quit. اختار التطبيق المعلق واضغط Force Quit. كمان ممكن تعمل كليك يمين (أو Option+كليك) على أيقونة التطبيق في الـ Dock وتختار Force Quit.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Option+Esc to see the Force Quit window (you can close it without quitting anything)",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Option+Esc تشوف نافذة Force Quit (ممكن تقفلها من غير ما تقفل حاجة)"
+      },
+      {
+        "id": "kb-3",
+        "windowsLabelEN": "Print Screen or Snipping Tool for screenshots",
+        "windowsLabelAR": "Print Screen أو Snipping Tool للسكرين شوت",
+        "macLabelEN": "Cmd+Shift+3 (full screen), Cmd+Shift+4 (selection), Cmd+Shift+5 (toolbar)",
+        "macLabelAR": "Cmd+Shift+3 (الشاشة كلها)، Cmd+Shift+4 (اختيار منطقة)، Cmd+Shift+5 (شريط أدوات)",
+        "explanationEN": "Mac has powerful built-in screenshots. Cmd+Shift+3 captures the full screen. Cmd+Shift+4 lets you drag to select a region. Cmd+Shift+5 opens a toolbar with screen recording too. Screenshots save to your Desktop by default.",
+        "explanationAR": "الماك فيه سكرين شوت مدمج قوي. Cmd+Shift+3 بيصور الشاشة كلها. Cmd+Shift+4 بيخليك تحدد منطقة. Cmd+Shift+5 بيفتح شريط أدوات فيه تسجيل شاشة كمان. الصور بتتحفظ على الـ Desktop.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Shift+4 and drag to capture a region",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Shift+4 واسحب عشان تصور منطقة"
+      },
+      {
+        "id": "kb-4",
+        "windowsLabelEN": "Delete key deletes forward, Backspace deletes backward",
+        "windowsLabelAR": "زرار Delete بيمسح لقدام، Backspace بيمسح لورا",
+        "macLabelEN": "Delete = Backspace. Fn+Delete = Forward Delete",
+        "macLabelAR": "Delete = Backspace. اضغط Fn+Delete عشان تمسح لقدام",
+        "explanationEN": "On Mac, the Delete key works like Backspace (deletes backward). There's no separate forward-delete key. To delete forward, press Fn+Delete. On MacBook keyboards, this is the only way to forward-delete text.",
+        "explanationAR": "على الماك، زرار Delete شغال زي Backspace (بيمسح لورا). مفيش زرار مخصوص للمسح لقدام. عشان تمسح لقدام، اضغط Fn+Delete. على كيبورد الماكبوك، دي الطريقة الوحيدة.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — place your cursor in the middle of some text and try both Delete and Fn+Delete",
+        "tryItPromptAR": "جربها دلوقتي — حط الكرسور في نص نص واضغط Delete وبعدين Fn+Delete"
+      },
+      {
+        "id": "kb-5",
+        "windowsLabelEN": "Ctrl+F to find, Ctrl+H to replace",
+        "windowsLabelAR": "Ctrl+F للبحث، Ctrl+H للاستبدال",
+        "macLabelEN": "Cmd+F to find, Cmd+Option+F to find & replace (in most apps)",
+        "macLabelAR": "Cmd+F للبحث، Cmd+Option+F للبحث والاستبدال (في معظم التطبيقات)",
+        "explanationEN": "Find works the same way — just use Cmd instead of Ctrl. For find & replace, most Mac apps use Cmd+Option+F (not Cmd+H, which hides the current app on Mac!). Be careful: Cmd+H hides windows, it doesn't open replace.",
+        "explanationAR": "البحث نفس الحركة — بس استخدم Cmd بدل Ctrl. للبحث والاستبدال، معظم تطبيقات الماك بتستخدم Cmd+Option+F (مش Cmd+H، لأن Cmd+H على الماك بيخفي التطبيق!). خلي بالك: Cmd+H بيخفي النوافذ، مش بيفتح الاستبدال.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+F in any app to open Find. And remember: Cmd+H hides, doesn't replace!",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+F في أي تطبيق عشان تفتح البحث. وافتكر: Cmd+H بيخفي مش بيستبدل!"
+      }
+    ]
   },
   {
     "id": "finder-survival",
