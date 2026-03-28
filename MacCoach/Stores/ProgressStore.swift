@@ -6,35 +6,37 @@ class ProgressStore {
     private let defaults = UserDefaults.standard
 
     var hasCompletedWelcome: Bool {
-        get { defaults.bool(forKey: "hasCompletedWelcome") }
-        set { defaults.set(newValue, forKey: "hasCompletedWelcome") }
+        didSet { defaults.set(hasCompletedWelcome, forKey: "hasCompletedWelcome") }
     }
 
     var isWindowsSwitcher: Bool {
-        get { defaults.bool(forKey: "isWindowsSwitcher") }
-        set { defaults.set(newValue, forKey: "isWindowsSwitcher") }
+        didSet { defaults.set(isWindowsSwitcher, forKey: "isWindowsSwitcher") }
     }
 
     var completedLessons: [String] {
-        get { defaults.stringArray(forKey: "completedLessons") ?? [] }
-        set { defaults.set(newValue, forKey: "completedLessons") }
+        didSet { defaults.set(completedLessons, forKey: "completedLessons") }
     }
 
     var lessonCardProgress: [String: Int] {
-        get { defaults.dictionary(forKey: "lessonCardProgress") as? [String: Int] ?? [:] }
-        set { defaults.set(newValue, forKey: "lessonCardProgress") }
+        didSet { defaults.set(lessonCardProgress, forKey: "lessonCardProgress") }
     }
 
     var pinnedShortcuts: [String] {
-        get { defaults.stringArray(forKey: "pinnedShortcuts") ?? [] }
-        set { defaults.set(newValue, forKey: "pinnedShortcuts") }
+        didSet { defaults.set(pinnedShortcuts, forKey: "pinnedShortcuts") }
+    }
+
+    init() {
+        let d = UserDefaults.standard
+        self.hasCompletedWelcome = d.bool(forKey: "hasCompletedWelcome")
+        self.isWindowsSwitcher = d.bool(forKey: "isWindowsSwitcher")
+        self.completedLessons = d.stringArray(forKey: "completedLessons") ?? []
+        self.lessonCardProgress = d.dictionary(forKey: "lessonCardProgress") as? [String: Int] ?? [:]
+        self.pinnedShortcuts = d.stringArray(forKey: "pinnedShortcuts") ?? []
     }
 
     func markLessonComplete(_ lessonId: String) {
-        var completed = completedLessons
-        if !completed.contains(lessonId) {
-            completed.append(lessonId)
-            completedLessons = completed
+        if !completedLessons.contains(lessonId) {
+            completedLessons.append(lessonId)
         }
     }
 
@@ -43,9 +45,7 @@ class ProgressStore {
     }
 
     func saveCardProgress(lessonId: String, cardIndex: Int) {
-        var progress = lessonCardProgress
-        progress[lessonId] = cardIndex
-        lessonCardProgress = progress
+        lessonCardProgress[lessonId] = cardIndex
     }
 
     func cardProgress(for lessonId: String) -> Int {
@@ -53,13 +53,11 @@ class ProgressStore {
     }
 
     func togglePinnedShortcut(_ shortcutId: String) {
-        var pinned = pinnedShortcuts
-        if pinned.contains(shortcutId) {
-            pinned.removeAll { $0 == shortcutId }
+        if pinnedShortcuts.contains(shortcutId) {
+            pinnedShortcuts.removeAll { $0 == shortcutId }
         } else {
-            pinned.append(shortcutId)
+            pinnedShortcuts.append(shortcutId)
         }
-        pinnedShortcuts = pinned
     }
 
     func isShortcutPinned(_ shortcutId: String) -> Bool {
