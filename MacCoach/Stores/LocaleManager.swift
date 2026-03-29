@@ -16,6 +16,13 @@ class LocaleManager {
     }
 
     init() {
-        self.selectedLanguage = UserDefaults.standard.string(forKey: "selectedLanguage") ?? "en"
+        // Use saved preference if available, otherwise detect system language
+        if let saved = UserDefaults.standard.string(forKey: "selectedLanguage") {
+            self.selectedLanguage = saved
+        } else {
+            // Detect system language: default to Arabic if Mac is set to Arabic, else English
+            let systemLang = Locale.current.language.languageCode?.identifier ?? "en"
+            self.selectedLanguage = (systemLang == "ar") ? "ar" : "en"
+        }
     }
 }

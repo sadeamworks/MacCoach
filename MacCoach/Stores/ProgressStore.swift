@@ -9,10 +9,6 @@ class ProgressStore {
         didSet { defaults.set(hasCompletedWelcome, forKey: "hasCompletedWelcome") }
     }
 
-    var isWindowsSwitcher: Bool {
-        didSet { defaults.set(isWindowsSwitcher, forKey: "isWindowsSwitcher") }
-    }
-
     var completedLessons: [String] {
         didSet { defaults.set(completedLessons, forKey: "completedLessons") }
     }
@@ -28,7 +24,6 @@ class ProgressStore {
     init() {
         let d = UserDefaults.standard
         self.hasCompletedWelcome = d.bool(forKey: "hasCompletedWelcome")
-        self.isWindowsSwitcher = d.bool(forKey: "isWindowsSwitcher")
         self.completedLessons = d.stringArray(forKey: "completedLessons") ?? []
         self.lessonCardProgress = d.dictionary(forKey: "lessonCardProgress") as? [String: Int] ?? [:]
         self.pinnedShortcuts = d.stringArray(forKey: "pinnedShortcuts") ?? []

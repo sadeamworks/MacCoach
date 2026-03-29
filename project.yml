@@ -31,6 +31,8 @@ targets:
         GENERATE_INFOPLIST_FILE: true
     entitlements:
       path: MacCoach/Resources/MacCoach.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
 
   MacCoachTests:
     type: bundle.unit-test

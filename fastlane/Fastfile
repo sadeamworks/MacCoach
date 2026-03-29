@@ -1,0 +1,75 @@
+# Mac Coach Fastfile
+# Usage: cd fastlane && bundle exec fastlane [lane]
+
+default_platform(:mac)
+
+platform :mac do
+  # Build the app for testing locally
+  lane :build do
+    xcodebuild(
+      project: "../MacCoach.xcodeproj",
+      scheme: "MacCoach",
+      configuration: "Debug"
+    )
+  end
+
+  # Run tests
+  lane :test do
+    run_tests(
+      project: "../MacCoach.xcodeproj",
+      scheme: "MacCoach",
+      destination: "platform=macOS"
+    )
+  end
+
+  # Build for Mac App Store distribution
+  desc "Build the app archive for Mac App Store"
+  lane :dist do
+    xcodebuild(
+      project: "../MacCoach.xcodeproj",
+      scheme: "MacCoach",
+      configuration: "Release",
+      archive: true,
+      archive_path: "./build/MacCoach.xcarchive",
+      allowProvisioningUpdates: true
+    )
+  end
+
+  # Build and export for App Store Connect
+  desc "Build and export .pkg for Mac App Store Connect upload"
+  lane :release_build do
+    # First build the archive
+    dist
+
+    # Then export to .pkg
+    xcodebuild(
+      archivePath: "./build/MacCoach.xcarchive",
+      exportArchive: true,
+      exportPath: "./build/export",
+      exportOptionsPlist: "export-options.plist"
+    )
+  end
+
+  # Upload to TestFlight (not applicable to Mac)
+  lane :beta do
+    UI.message("Mac apps don't use TestFlight. Use 'fastlane release_build' to build for App Store Connect.")
+  end
+
+  # Release the app to App Store Connect
+  desc "Build and prepare for App Store Connect submission"
+  lane :release do
+    # Ensure we're on the main branch
+    ensure_git_branch(branch: "main")
+
+    # Build the release
+    release_build
+
+    # Note: Manual upload to App Store Connect required for Mac apps
+    UI.important("Upload ./build/export/*.pkg to App Store Connect manually")
+  end
+
+  # Error block
+  error do |lane, exception|
+    UI.error("Error in lane #{lane}: #{exception.message}")
+  end
+end

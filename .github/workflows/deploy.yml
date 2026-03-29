@@ -1,0 +1,83 @@
+name: Build Mac Coach
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'Create release build'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  build:
+    name: Build Mac Coach
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '16.0'
+
+      - name: Install xcodegen
+        run: |
+          brew install xcodegen
+          xcodegen version
+
+      - name: Generate Xcode project
+        run: |
+          xcodegen generate
+
+      - name: Build Debug
+        run: |
+          xcodebuild -project MacCoach.xcodeproj \
+            -scheme MacCoach \
+            -configuration Debug \
+            build
+
+      - name: Build Release (if release tag or manual trigger)
+        if: github.event_name == 'workflow_dispatch' && inputs.release == true
+        run: |
+          xcodebuild -project MacCoach.xcodeproj \
+            -scheme MacCoach \
+            -configuration Release \
+            -archive build/MacCoach.xcarchive \
+            archivePath build/MacCoach.xcarchive
+
+      - name: Export Release .pkg
+        if: github.event_name == 'workflow_dispatch' && inputs.release == true
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath build/MacCoach.xcarchive \
+            -exportPath build/export \
+            -exportOptionsPlist export-options.plist
+
+      - name: Upload .pkg artifact
+        if: github.event_name == 'workflow_dispatch' && inputs.release == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: MacCoach-Release
+          path: build/export/*.pkg
+
+      - name: Run Tests
+        run: |
+          xcodebuild test \
+            -project MacCoach.xcodeproj \
+            -scheme MacCoach \
+            -destination 'platform=macOS' \
+            -resultBundlePath TestResults.xcresult
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Test-Results
+          path: TestResults.xcresult

@@ -16,29 +16,23 @@ struct WelcomeView: View {
                 .font(.title2.bold())
                 .multilineTextAlignment(.center)
 
+            Text(localeManager.isArabic
+                 ? "دروس سريعة واختصارات هتخليك مرتاح في دقايق."
+                 : "Quick lessons and shortcuts to get you comfortable in minutes.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+
             LanguageToggle()
 
-            VStack(spacing: 12) {
-                Button {
-                    progressStore.isWindowsSwitcher = true
-                    progressStore.hasCompletedWelcome = true
-                } label: {
-                    Text(localeManager.isArabic ? "أيوه، ساعدني!" : "Yes, help me!")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.borderedProminent)
-                .controlSize(.large)
-
-                Button {
-                    progressStore.isWindowsSwitcher = false
-                    progressStore.hasCompletedWelcome = true
-                } label: {
-                    Text(localeManager.isArabic ? "لا، بتصفح بس" : "No, just exploring")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.bordered)
-                .controlSize(.large)
+            Button {
+                progressStore.hasCompletedWelcome = true
+            } label: {
+                Text(localeManager.isArabic ? "يلا نبدأ!" : "Get Started")
+                    .frame(maxWidth: .infinity)
             }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
 
             Spacer()
         }
