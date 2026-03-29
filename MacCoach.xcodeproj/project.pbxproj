@@ -23,6 +23,7 @@
 		91E5490938B7E6139C4A746C /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C125A16616B569596F2D3 /* LessonView.swift */; };
 		AA83ADAA8AC22C9F7E58D18B /* shortcuts.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C746EE7F899AE8CA5D618B /* shortcuts.json */; };
 		AF48BB3D2DC4F5F9DC598E50 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485C7BC101F69B7CF9B41A2 /* LessonCard.swift */; };
+		AFA9D221F46809B2733D8141 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C3AD1DEEDB621CB64B1295CA /* AppIcon.icns */; };
 		CCCB2422EE444BE4257F308A /* MacCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873899A75A4214388137B8B /* MacCoachApp.swift */; };
 		D4C3203B852DE26913B20722 /* MacCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00FEF1928AC2656160D987 /* MacCoachTests.swift */; };
 		DBCEB746850E8BA35647FECF /* ProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38FD6B61417183ECEBB58A /* ProgressStore.swift */; };
@@ -51,6 +52,7 @@
 		2731F0CEF5450C9C2D9B1F15 /* ShortcutEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutEntry.swift; sourceTree = "<group>"; };
 		2873899A75A4214388137B8B /* MacCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCoachApp.swift; sourceTree = "<group>"; };
 		38C791194FFD02335EE5F174 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		38FBC0BF799611043FE4F9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3F64E46918277CD5AA36D389 /* GlobalHotKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotKey.swift; sourceTree = "<group>"; };
 		54B0BB7E6E1B7BA20317A843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CA0B7A08810A70A4977B46 /* MacCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 		96D83EB4EBBD1D9830ABB90B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AE4224B412B191D41B6BE583 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		C16B67EEA5C2CE28020D251E /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
+		C3AD1DEEDB621CB64B1295CA /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 		CA8C125A16616B569596F2D3 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 		CC2A45B28620E61DD682CE99 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		CF00FEF1928AC2656160D987 /* MacCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCoachTests.swift; sourceTree = "<group>"; };
@@ -168,7 +171,9 @@
 		DF5FF3FF66658FD95EA1C44B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C3AD1DEEDB621CB64B1295CA /* AppIcon.icns */,
 				8235C53CEDD894C60E403688 /* Assets.xcassets */,
+				38FBC0BF799611043FE4F9D7 /* Info.plist */,
 				0189D0DD2DB7A11B7AF1CC09 /* MacCoach.entitlements */,
 				F9943DB49573EF4E694F9951 /* Content */,
 			);
@@ -239,8 +244,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = BC16CF605C983296D0A38D0E /* Build configuration list for PBXProject "MacCoach" */;
 			developmentRegion = en;
@@ -267,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA9D221F46809B2733D8141 /* AppIcon.icns in Resources */,
 				FAE4204EBA54107B80D523DE /* Assets.xcassets in Resources */,
 				ECF8A9154B815E566590A7CD /* lessons.json in Resources */,
 				AA83ADAA8AC22C9F7E58D18B /* shortcuts.json in Resources */,
@@ -466,15 +470,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MacCoach/Resources/MacCoach.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Mac Coach";
-				INFOPLIST_KEY_LSUIElement = YES;
+				DEVELOPMENT_TEAM = 6GAS29YJD6;
+				INFOPLIST_FILE = MacCoach/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadeam.maccoach;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -501,15 +507,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MacCoach/Resources/MacCoach.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Mac Coach";
-				INFOPLIST_KEY_LSUIElement = YES;
+				DEVELOPMENT_TEAM = 6GAS29YJD6;
+				INFOPLIST_FILE = MacCoach/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadeam.maccoach;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
