@@ -2,10 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>destination</key>
+	<string>export</string>
+	<key>installerSigningCertificate</key>
+	<string>F3C84D8478EFC175D624F9F9F2816BC0850CE44D</string>
 	<key>method</key>
-	<string>app-store</string>
-	<key>uploadBitcode</key>
-	<false/>
+	<string>app-store-connect</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.sadeam.maccoach</key>
+		<string>Switcher Coach Mac App Store (2026-10)</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>2FF9FB1AC9BDB2500792AA9749B0B0B03F3AE919</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>teamID</key>
+	<string>6GAS29YJD6</string>
 	<key>uploadSymbols</key>
 	<true/>
 </dict>
