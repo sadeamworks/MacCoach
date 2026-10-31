@@ -21,12 +21,27 @@ class ProgressStore {
         didSet { defaults.set(pinnedShortcuts, forKey: "pinnedShortcuts") }
     }
 
+    var hasRequestedReview: Bool {
+        didSet { defaults.set(hasRequestedReview, forKey: "hasRequestedReview") }
+    }
+
+    var bestQuizScore: Int {
+        didSet { defaults.set(bestQuizScore, forKey: "bestQuizScore") }
+    }
+
+    var dailyTipNotificationsEnabled: Bool {
+        didSet { defaults.set(dailyTipNotificationsEnabled, forKey: "dailyTipNotificationsEnabled") }
+    }
+
     init() {
         let d = UserDefaults.standard
         self.hasCompletedWelcome = d.bool(forKey: "hasCompletedWelcome")
         self.completedLessons = d.stringArray(forKey: "completedLessons") ?? []
         self.lessonCardProgress = d.dictionary(forKey: "lessonCardProgress") as? [String: Int] ?? [:]
         self.pinnedShortcuts = d.stringArray(forKey: "pinnedShortcuts") ?? []
+        self.hasRequestedReview = d.bool(forKey: "hasRequestedReview")
+        self.bestQuizScore = d.integer(forKey: "bestQuizScore")
+        self.dailyTipNotificationsEnabled = d.bool(forKey: "dailyTipNotificationsEnabled")
     }
 
     func markLessonComplete(_ lessonId: String) {

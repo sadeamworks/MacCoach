@@ -11,13 +11,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         setupStatusItem()
         setupPopover()
         setupGlobalHotKey()
+        refreshDailyTipSchedule()
+    }
+
+    /// Keeps the 14-day daily-tip notification queue topped up across launches.
+    private func refreshDailyTipSchedule() {
+        guard UserDefaults.standard.bool(forKey: "dailyTipNotificationsEnabled") else { return }
+        let isArabic = UserDefaults.standard.string(forKey: "selectedLanguage") == "ar"
+        DailyTipEngine.scheduleNotifications(isArabic: isArabic)
     }
 
     private func setupStatusItem() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
 
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: "graduationcap.fill", accessibilityDescription: "Mac Coach")
+            button.image = NSImage(systemSymbolName: "graduationcap.fill", accessibilityDescription: "Switcher Coach")
             button.action = #selector(togglePopover)
             button.target = self
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
@@ -26,9 +34,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func setupMenu() -> NSMenu {
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "About Mac Coach", action: #selector(showAbout), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "About Switcher Coach", action: #selector(showAbout), keyEquivalent: ""))
         menu.addItem(NSMenuItem.separator())
-        menu.addItem(NSMenuItem(title: "Quit Mac Coach", action: #selector(quitApp), keyEquivalent: "q"))
+        menu.addItem(NSMenuItem(title: "Quit Switcher Coach", action: #selector(quitApp), keyEquivalent: "q"))
         return menu
     }
 
@@ -43,7 +51,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func setupPopover() {
         popover = NSPopover()
-        popover.contentSize = NSSize(width: 320, height: 480)
+        popover.contentSize = NSSize(width: 360, height: 560)
         popover.behavior = .transient
         popover.contentViewController = NSHostingController(
             rootView: PopoverContentView()

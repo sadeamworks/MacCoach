@@ -9,6 +9,7 @@ struct CheatSheetView: View {
     private let allShortcuts = ContentStore.shared.shortcuts
     private let categories: [(id: String, labelEN: String, labelAR: String, icon: String)] = [
         ("general", "General", "عام", "command"),
+        ("browser", "Browser", "المتصفح", "safari"),
         ("text", "Text Editing", "تحرير النص", "textformat"),
         ("finder", "Finder", "Finder", "folder"),
         ("screenshots", "Screenshots", "سكرين شوت", "camera.viewfinder"),
@@ -61,6 +62,18 @@ struct CheatSheetView: View {
                     }
                     .buttonStyle(.plain)
                 }
+
+                Divider().frame(height: 14)
+
+                Button {
+                    exportPDF()
+                } label: {
+                    Image(systemName: "arrow.down.doc")
+                        .font(.caption)
+                        .foregroundStyle(Color.accentColor)
+                }
+                .buttonStyle(.plain)
+                .help(localeManager.isArabic ? "تصدير الورقة PDF — ابعتها لأي حد" : "Export as PDF — send it to anyone")
             }
             .padding(8)
             .background(Color.primary.opacity(0.04))
@@ -153,5 +166,33 @@ struct CheatSheetView: View {
                 progressStore.togglePinnedShortcut(shortcut.id)
             }
         )
+    }
+
+    private func exportPDF() {
+        let isArabic = localeManager.isArabic
+        let pdfCategories = categories.map {
+            CheatSheetPDF.Category(id: $0.id, label: isArabic ? $0.labelAR : $0.labelEN)
+        }
+        guard let data = CheatSheetPDF.generate(
+            shortcuts: allShortcuts,
+            categories: pdfCategories,
+            isArabic: isArabic
+        ) else { return }
+
+        let panel = NSSavePanel()
+        panel.allowedContentTypes = [.pdf]
+        panel.nameFieldStringValue = isArabic
+            ? "Switcher Coach — اختصارات ويندوز لماك.pdf"
+            : "Switcher Coach — Windows to Mac Shortcuts.pdf"
+        NSApp.activate(ignoringOtherApps: true)
+        panel.begin { response in
+            guard response == .OK, let url = panel.url else { return }
+            do {
+                try data.write(to: url)
+                NSWorkspace.shared.activateFileViewerSelecting([url])
+            } catch {
+                NSSound.beep()
+            }
+        }
     }
 }

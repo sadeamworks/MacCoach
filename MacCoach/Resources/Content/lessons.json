@@ -352,5 +352,371 @@
         "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Space واكتب جزء من اسم ملف انت عارف إنه موجود على الماك"
       }
     ]
+  },
+  {
+    "id": "iphone-continuity",
+    "order": 7,
+    "icon": "iphone",
+    "titleEN": "iPhone + Mac Magic",
+    "titleAR": "سحر الآيفون مع الماك",
+    "hookEN": "The stuff that makes your friends say 'whoa'",
+    "hookAR": "الحاجات اللي هتخلي صحابك يقولوا 'إزاي دي!'",
+    "cards": [
+      {
+        "id": "ic-1",
+        "windowsLabelEN": "Transfer photos from your phone with a USB cable or WhatsApp-to-yourself",
+        "windowsLabelAR": "بتنقل الصور من موبايلك بكابل USB أو بتبعتها لنفسك على واتساب",
+        "macLabelEN": "AirDrop — instant, wireless, full quality",
+        "macLabelAR": "AirDrop — فوري، من غير كابلات، وبالجودة الكاملة",
+        "explanationEN": "On your iPhone, share any photo or file and tap AirDrop — your Mac appears in the list. It lands in your Downloads folder in seconds, full quality, no compression. Works both ways: right-click any file on Mac → Share → AirDrop.",
+        "explanationAR": "على الآيفون، اعمل مشاركة لأي صورة أو ملف ودوس AirDrop — هتلاقي الماك بتاعك ظاهر في القايمة. الملف بيوصل لفولدر Downloads في ثواني، بجودته الكاملة من غير ضغط. وبيشتغل في الاتجاهين: كليك يمين على أي ملف في الماك ← Share ← AirDrop.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — grab your iPhone, pick a photo, tap Share → AirDrop, and watch it land on your Mac",
+        "tryItPromptAR": "جربها دلوقتي — هات الآيفون، اختار صورة، دوس مشاركة ← AirDrop، وشوفها بتوصل للماك"
+      },
+      {
+        "id": "ic-2",
+        "windowsLabelEN": "Copy on one device, paste on the same device only",
+        "windowsLabelAR": "بتعمل نسخ على جهاز، وبتلصق على نفس الجهاز وبس",
+        "macLabelEN": "Universal Clipboard — copy on iPhone, paste on Mac",
+        "macLabelAR": "الحافظة الموحدة — انسخ على الآيفون، والصق على الماك",
+        "explanationEN": "Copy text, a photo, or a link on your iPhone, then just press Cmd+V on your Mac — it pastes. No app, no setup. It works automatically when both devices use the same Apple Account with Bluetooth and Wi-Fi on.",
+        "explanationAR": "انسخ نص أو صورة أو لينك على الآيفون، وبعدين اضغط Cmd+V على الماك — هتتلصق عادي. من غير تطبيقات ولا إعدادات. بتشتغل أوتوماتيك طالما الجهازين على نفس حساب Apple والبلوتوث والواي فاي شغالين.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — copy any sentence on your iPhone, then press Cmd+V in any text field on your Mac",
+        "tryItPromptAR": "جربها دلوقتي — انسخ أي جملة على الآيفون، وبعدين اضغط Cmd+V في أي خانة كتابة على الماك"
+      },
+      {
+        "id": "ic-3",
+        "windowsLabelEN": "Phone Link mirrors some Android phones onto Windows",
+        "windowsLabelAR": "Phone Link بيعرض بعض موبايلات الأندرويد على ويندوز",
+        "macLabelEN": "iPhone Mirroring — your whole iPhone on your Mac screen (macOS 15+)",
+        "macLabelAR": "iPhone Mirroring — الآيفون كله على شاشة الماك (macOS 15+)",
+        "explanationEN": "On macOS 15 (Sequoia) and later, open the iPhone Mirroring app: your iPhone's full screen appears on your Mac, and you control it with your mouse and keyboard — reply to WhatsApp, check any app, even while the iPhone stays locked in your bag.",
+        "explanationAR": "من macOS 15 (سيكويا) وبعده، افتح تطبيق iPhone Mirroring: شاشة الآيفون كلها هتظهر على الماك، وتتحكم فيها بالماوس والكيبورد — رد على واتساب، افتح أي تطبيق، حتى لو الآيفون مقفول في شنطتك.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Space, type 'iPhone Mirroring', and follow the one-time setup",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Space واكتب iPhone Mirroring وكمّل الإعداد لأول مرة"
+      },
+      {
+        "id": "ic-4",
+        "windowsLabelEN": "Buy a webcam for video calls",
+        "windowsLabelAR": "بتشتري ويب كام عشان مكالمات الفيديو",
+        "macLabelEN": "Continuity Camera — your iPhone is the best webcam you own",
+        "macLabelAR": "Continuity Camera — الآيفون بتاعك هو أحسن ويب كام عندك",
+        "explanationEN": "In any video call app (Zoom, Meet, FaceTime), open the camera menu and pick your iPhone — it becomes a wireless HD webcam automatically. Bonus: in Notes or any document, right-click → 'Insert from iPhone' to scan paper documents with the iPhone camera straight into your Mac.",
+        "explanationAR": "في أي تطبيق مكالمات فيديو (Zoom أو Meet أو FaceTime)، افتح قايمة الكاميرا واختار الآيفون — هيشتغل كويب كام HD لاسلكي أوتوماتيك. وكمان: في Notes أو أي مستند، كليك يمين ← Insert from iPhone عشان تعمل مسح ضوئي لورق بكاميرا الآيفون على طول لجوة الماك.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open FaceTime on your Mac and check the Video menu: your iPhone should be listed as a camera",
+        "tryItPromptAR": "جربها دلوقتي — افتح FaceTime على الماك وبص في قايمة Video: هتلاقي الآيفون ظاهر كاميرا"
+      },
+      {
+        "id": "ic-5",
+        "windowsLabelEN": "Emailing yourself a half-written document to continue on another device",
+        "windowsLabelAR": "بتبعت لنفسك الشغل الناقص على الإيميل عشان تكمله على جهاز تاني",
+        "macLabelEN": "Handoff — continue exactly where you left off",
+        "macLabelAR": "Handoff — كمّل من نفس النقطة اللي وقفت عندها",
+        "explanationEN": "Reading a page in Safari on your iPhone? A Safari icon appears at the right edge of your Mac's Dock — click it and the same page opens. Works with Mail, Notes, Pages and more, in both directions. Look for the small 'from iPhone' badge.",
+        "explanationAR": "بتقرا صفحة في Safari على الآيفون؟ هتلاقي أيقونة Safari ظهرت في طرف الـ Dock على الماك — دوس عليها ونفس الصفحة هتفتح. بيشتغل مع Mail وNotes وPages وغيرهم، وفي الاتجاهين. دوّر على علامة 'from iPhone' الصغيرة.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open any website in Safari on your iPhone, then look at the right edge of your Mac's Dock",
+        "tryItPromptAR": "جربها دلوقتي — افتح أي موقع في Safari على الآيفون، وبعدين بص على طرف الـ Dock في الماك"
+      }
+    ]
+  },
+  {
+    "id": "mission-control-spaces",
+    "order": 8,
+    "icon": "rectangle.3.group",
+    "titleEN": "Mission Control & Spaces",
+    "titleAR": "Mission Control والمساحات",
+    "hookEN": "One desktop is never enough",
+    "hookAR": "ديسك توب واحد عمره ما كان كفاية",
+    "cards": [
+      {
+        "id": "mc-1",
+        "windowsLabelEN": "Win+Ctrl+D creates a new virtual desktop",
+        "windowsLabelAR": "Win+Ctrl+D بيعمل ديسك توب افتراضي جديد",
+        "macLabelEN": "Swipe up with 3 fingers, then click + at the top right to add a Space",
+        "macLabelAR": "اسحب بـ 3 صوابع لفوق، وبعدين دوس + فوق على اليمين عشان تضيف Space",
+        "explanationEN": "macOS calls virtual desktops 'Spaces'. Swipe up with three fingers (or press Ctrl+Up) to open Mission Control, move your mouse to the top of the screen, and click the + button. Put work apps in one Space and personal stuff in another.",
+        "explanationAR": "macOS بيسمي الديسك توب الافتراضي 'Spaces'. اسحب بتلات صوابع لفوق (أو اضغط Ctrl+Up) عشان تفتح Mission Control، وحرّك الماوس لأعلى الشاشة ودوس زرار +. حط تطبيقات الشغل في Space والحاجات الشخصية في Space تاني.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — swipe up with 3 fingers and create a second desktop with the + button",
+        "tryItPromptAR": "جربها دلوقتي — اسحب بـ 3 صوابع لفوق واعمل ديسك توب تاني بزرار +"
+      },
+      {
+        "id": "mc-2",
+        "windowsLabelEN": "Win+Ctrl+Left/Right to switch between virtual desktops",
+        "windowsLabelAR": "Win+Ctrl+شمال/يمين للتنقل بين الديسك توبات",
+        "macLabelEN": "Ctrl+Left/Right — or swipe left/right with 3 fingers",
+        "macLabelAR": "Ctrl+شمال/يمين — أو اسحب بـ 3 صوابع يمين وشمال",
+        "explanationEN": "Switching Spaces is instant: Ctrl+Left / Ctrl+Right on the keyboard, or a three-finger horizontal swipe on the trackpad. The swipe is the single most satisfying gesture on the Mac — you'll use it hundreds of times a day.",
+        "explanationAR": "التنقل بين الـ Spaces لحظي: Ctrl+شمال / Ctrl+يمين من الكيبورد، أو سحبة أفقية بتلات صوابع على التراك باد. السحبة دي أمتع حركة في الماك — هتستخدمها مئات المرات في اليوم.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — swipe left and right with 3 fingers between your desktops",
+        "tryItPromptAR": "جربها دلوقتي — اسحب يمين وشمال بـ 3 صوابع بين الديسك توبات"
+      },
+      {
+        "id": "mc-3",
+        "windowsLabelEN": "Maximized apps stay on the same desktop",
+        "windowsLabelAR": "التطبيقات المكبّرة بتفضل على نفس الديسك توب",
+        "macLabelEN": "Fullscreen apps become their own Space",
+        "macLabelAR": "تطبيقات الشاشة الكاملة بتبقى Space لوحدها",
+        "explanationEN": "When you click the green button and go fullscreen, the app moves into its own Space. That's why your other windows 'disappear' — they're still on the desktop Space, one swipe away. Suddenly the green button makes sense: fullscreen apps live side by side, and you glide between them.",
+        "explanationAR": "لما تدوس الزرار الأخضر وتدخل الشاشة الكاملة، التطبيق بينتقل لـ Space لوحده. عشان كده باقي النوافذ 'بتختفي' — هي لسه موجودة على Space الديسك توب، على بعد سحبة واحدة. هنا الزرار الأخضر يبقى منطقي: تطبيقات الشاشة الكاملة جنب بعض، وانت بتنساب بينهم.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — make Safari fullscreen with the green button, then swipe right with 3 fingers to find your desktop again",
+        "tryItPromptAR": "جربها دلوقتي — خلّي Safari شاشة كاملة بالزرار الأخضر، وبعدين اسحب يمين بـ 3 صوابع ترجع للديسك توب"
+      },
+      {
+        "id": "mc-4",
+        "windowsLabelEN": "No Windows equivalent — this one's a Mac superpower",
+        "windowsLabelAR": "مفيش حاجة زيها في ويندوز — دي قوة خارقة للماك",
+        "macLabelEN": "Hot Corners — flick your mouse to a corner to trigger an action",
+        "macLabelAR": "Hot Corners — ودّي الماوس لركن الشاشة وحاجة تحصل",
+        "explanationEN": "In System Settings → Desktop & Dock → Hot Corners, you can make each screen corner do something: bottom-right shows the desktop, top-left opens Mission Control, bottom-left locks the screen. After a day it becomes muscle memory.",
+        "explanationAR": "من System Settings ← Desktop & Dock ← Hot Corners، تقدر تخلّي كل ركن في الشاشة يعمل حاجة: تحت يمين يوريك الديسك توب، فوق شمال يفتح Mission Control، تحت شمال يقفل الشاشة. بعد يوم واحد هتلاقيها بقت عادة.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open System Settings, search 'Hot Corners', and set the bottom-right corner to 'Desktop'",
+        "tryItPromptAR": "جربها دلوقتي — افتح System Settings ودوّر على Hot Corners وخلّي الركن اللي تحت على اليمين 'Desktop'"
+      }
+    ]
+  },
+  {
+    "id": "system-settings",
+    "order": 9,
+    "icon": "gearshape.2",
+    "titleEN": "Where's Control Panel?",
+    "titleAR": "فين الـ Control Panel؟",
+    "hookEN": "Settings, updates, and uninstalling — the Mac way",
+    "hookAR": "الإعدادات والتحديثات ومسح البرامج — بطريقة الماك",
+    "cards": [
+      {
+        "id": "ss-1",
+        "windowsLabelEN": "Control Panel + the Settings app (and things live in both)",
+        "windowsLabelAR": "Control Panel + تطبيق الإعدادات (والحاجات متلخبطة بينهم)",
+        "macLabelEN": "One place: System Settings — and its search box knows everything",
+        "macLabelAR": "مكان واحد: System Settings — وخانة البحث فيه عارفة كل حاجة",
+        "explanationEN": "Click the Apple menu () at the top-left → System Settings. Don't browse the sidebar — type what you want in its search box: 'wallpaper', 'Bluetooth', 'battery'. If you don't know what a setting is called, describe it and macOS usually finds it.",
+        "explanationAR": "دوس على قايمة أبل () فوق على الشمال ← System Settings. متدورش في القايمة الجانبية — اكتب اللي عايزه في خانة البحث: 'wallpaper' أو 'Bluetooth' أو 'battery'. حتى لو مش عارف اسم الإعداد، اوصفه وmacOS غالباً هيلاقيه.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open System Settings from the  menu and search for 'wallpaper'",
+        "tryItPromptAR": "جربها دلوقتي — افتح System Settings من قايمة  ودوّر على wallpaper"
+      },
+      {
+        "id": "ss-2",
+        "windowsLabelEN": "Add/Remove Programs to uninstall apps",
+        "windowsLabelAR": "بتمسح البرامج من Add/Remove Programs",
+        "macLabelEN": "Drag the app from Applications to the Trash. That's it.",
+        "macLabelAR": "اسحب التطبيق من فولدر Applications للسلة. خلاص.",
+        "explanationEN": "No uninstaller wizards. Open Finder → Applications, drag the app to the Trash (or Cmd+Delete), empty the Trash. App Store apps can also be deleted from Launchpad — click and hold until they jiggle, like iPhone.",
+        "explanationAR": "مفيش معالجات إلغاء تثبيت. افتح Finder ← Applications، اسحب التطبيق للسلة (أو Cmd+Delete)، وفضّي السلة. تطبيقات الـ App Store كمان بتتمسح من Launchpad — دوس مطوّل لحد ما تهتز، زي الآيفون بالظبط.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open Finder and press Cmd+Shift+A to jump straight to your Applications folder",
+        "tryItPromptAR": "جربها دلوقتي — افتح Finder واضغط Cmd+Shift+A عشان تروح لفولدر Applications على طول"
+      },
+      {
+        "id": "ss-3",
+        "windowsLabelEN": "Windows Update decides your restart schedule",
+        "windowsLabelAR": "Windows Update هو اللي بيقرر امتى جهازك يعمل ريستارت",
+        "macLabelEN": "System Settings → General → Software Update — on your schedule",
+        "macLabelAR": "System Settings ← General ← Software Update — على مزاجك انت",
+        "explanationEN": "macOS updates arrive a few times a year and never force a restart in the middle of your work. Check System Settings → General → Software Update. App updates come separately through the App Store's Updates tab.",
+        "explanationAR": "تحديثات macOS بتنزل كام مرة في السنة وعمرها ما هتجبرك على ريستارت في نص شغلك. بص على System Settings ← General ← Software Update. تحديثات التطبيقات بتيجي لوحدها من تبويب Updates في الـ App Store.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — check Software Update to see if your macOS is current",
+        "tryItPromptAR": "جربها دلوقتي — افتح Software Update وشوف الـ macOS بتاعك محدّث ولا لأ"
+      },
+      {
+        "id": "ss-4",
+        "windowsLabelEN": "Default apps buried in Settings → Apps → Default apps",
+        "windowsLabelAR": "التطبيقات الافتراضية مدفونة في Settings ← Apps ← Default apps",
+        "macLabelEN": "Default browser is in Desktop & Dock; per-file-type defaults via Get Info",
+        "macLabelAR": "المتصفح الافتراضي في Desktop & Dock؛ وباقي الأنواع من Get Info",
+        "explanationEN": "To make Chrome your default browser: System Settings → Desktop & Dock → scroll to 'Default web browser'. For file types (e.g. open ZIPs with another app): select a file, Cmd+I → 'Open with' → pick the app → click 'Change All…'.",
+        "explanationAR": "عشان تخلّي Chrome المتصفح الافتراضي: System Settings ← Desktop & Dock ← انزل لـ 'Default web browser'. ولنوع ملفات معين (مثلاً تفتح ZIP بتطبيق تاني): اختار الملف، اضغط Cmd+I ← 'Open with' ← اختار التطبيق ← دوس 'Change All…'.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+I on any file and explore the 'Open with' section",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+I على أي ملف وبص على قسم Open with"
+      }
+    ]
+  },
+  {
+    "id": "installing-apps",
+    "order": 10,
+    "icon": "arrow.down.app",
+    "titleEN": "Installing Without Fear",
+    "titleAR": "التثبيت من غير خوف",
+    "hookEN": "That scary 'cannot be opened' warning, explained",
+    "hookAR": "تحذير 'cannot be opened' المرعب — الشرح الكامل",
+    "cards": [
+      {
+        "id": "ia-1",
+        "windowsLabelEN": "SmartScreen warns about unrecognized .exe files",
+        "windowsLabelAR": "SmartScreen بيحذرك من ملفات exe مش معروفة",
+        "macLabelEN": "Gatekeeper may block apps from outside the App Store — you stay in control",
+        "macLabelAR": "Gatekeeper ممكن يمنع تطبيقات من برة الـ App Store — بس القرار قرارك",
+        "explanationEN": "If you see \"'App' can't be opened because it is from an unidentified developer\", macOS is being cautious, not broken. If you trust the source: right-click the app → Open → Open. On newer macOS you may instead confirm in System Settings → Privacy & Security → 'Open Anyway'. Only do this for apps you trust.",
+        "explanationAR": "لو ظهرلك \"'App' can't be opened because it is from an unidentified developer\"، macOS بيحتاط مش بايظ. لو واثق في المصدر: كليك يمين على التطبيق ← Open ← Open. وفي إصدارات macOS الأحدث ممكن تأكد من System Settings ← Privacy & Security ← 'Open Anyway'. اعملها بس مع تطبيقات انت واثق فيها.",
+        "imageName": null,
+        "tryItPromptEN": null,
+        "tryItPromptAR": null
+      },
+      {
+        "id": "ia-2",
+        "windowsLabelEN": "Programs scatter across Program Files, AppData, and the registry",
+        "windowsLabelAR": "البرامج بتتوزع بين Program Files وAppData والريجستري",
+        "macLabelEN": "Almost every app is one self-contained file in /Applications",
+        "macLabelAR": "تقريباً كل تطبيق ملف واحد مكتفي بذاته جوة /Applications",
+        "explanationEN": "A Mac app is a single .app bundle — everything inside one icon. There's no registry, no scattered DLLs. Moving an app to Applications installs it; moving it to Trash removes it. (Settings live in your Library folder, but you rarely need to touch them.)",
+        "explanationAR": "تطبيق الماك عبارة عن ملف .app واحد — كل حاجة جوة أيقونة واحدة. مفيش ريجستري ولا ملفات DLL متبعترة. نقل التطبيق لـ Applications هو التثبيت؛ ونقله للسلة هو المسح. (الإعدادات بتتحفظ في فولدر Library، بس نادراً ما هتحتاج تفتحه.)",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — right-click any app in Applications and choose 'Show Package Contents' to peek inside",
+        "tryItPromptAR": "جربها دلوقتي — كليك يمين على أي تطبيق في Applications واختار Show Package Contents وبص جواه"
+      },
+      {
+        "id": "ia-3",
+        "windowsLabelEN": "Downloaded installers pile up and auto-run at startup",
+        "windowsLabelAR": "ملفات التثبيت بتتكوم والبرامج بتشتغل لوحدها مع بدء التشغيل",
+        "macLabelEN": "Eject the DMG after installing — and check Login Items occasionally",
+        "macLabelAR": "اعمل Eject للـ DMG بعد التثبيت — وبص على Login Items من وقت للتاني",
+        "explanationEN": "After dragging an app from a .dmg into Applications, eject the DMG (click ⏏ next to it in Finder's sidebar) and delete the .dmg file — it's just packaging. To control what launches at startup: System Settings → General → Login Items.",
+        "explanationAR": "بعد ما تسحب التطبيق من الـ .dmg لـ Applications، اعمل Eject للـ DMG (دوس ⏏ اللي جنبه في القايمة الجانبية في Finder) وامسح ملف الـ .dmg — ده مجرد تغليف. وعشان تتحكم في اللي بيشتغل مع بدء التشغيل: System Settings ← General ← Login Items.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open System Settings → General → Login Items and see what starts with your Mac",
+        "tryItPromptAR": "جربها دلوقتي — افتح System Settings ← General ← Login Items وشوف إيه اللي بيشتغل مع الماك"
+      },
+      {
+        "id": "ia-4",
+        "windowsLabelEN": "Microsoft Store exists, but most software comes from the web",
+        "windowsLabelAR": "Microsoft Store موجود، بس أغلب البرامج بتيجي من النت",
+        "macLabelEN": "Prefer the Mac App Store when an app is there — automatic, sandboxed, refundable",
+        "macLabelAR": "فضّل الـ Mac App Store لو التطبيق موجود عليه — تحديث تلقائي وأمان أعلى",
+        "explanationEN": "App Store apps update automatically, are reviewed by Apple, run in a sandbox, and reinstall on any Mac you sign into. Web downloads are fine too (many great Mac apps live outside the store) — just download from the developer's official site.",
+        "explanationAR": "تطبيقات الـ App Store بتتحدث لوحدها، ومراجَعة من أبل، وشغالة في بيئة معزولة، وبتترجع على أي ماك تسجل دخولك عليه. التحميل من النت برضه عادي (تطبيقات ماك ممتازة كتير مش على الستور) — بس حمّل من موقع المطور الرسمي.",
+        "imageName": null,
+        "tryItPromptEN": null,
+        "tryItPromptAR": null
+      }
+    ]
+  },
+  {
+    "id": "when-things-freeze",
+    "order": 11,
+    "icon": "exclamationmark.octagon",
+    "titleEN": "When Things Freeze",
+    "titleAR": "لما الدنيا تهنّج",
+    "hookEN": "The spinning beach ball survival kit",
+    "hookAR": "عدة النجاة من كورة الشاطئ اللي بتلف",
+    "cards": [
+      {
+        "id": "fz-1",
+        "windowsLabelEN": "The spinning blue circle means an app is busy",
+        "windowsLabelAR": "الدايرة الزرقا اللي بتلف معناها إن البرنامج مشغول",
+        "macLabelEN": "The rainbow 'beach ball' means the same — give it a few seconds first",
+        "macLabelAR": "'كورة الشاطئ' الملونة معناها نفس الحاجة — استنى كام ثانية الأول",
+        "explanationEN": "The spinning rainbow cursor means that one app is momentarily unresponsive — not the whole Mac. Your other apps keep working normally. If it spins for more than ~30 seconds, it's time for Force Quit.",
+        "explanationAR": "المؤشر الملون اللي بيلف معناه إن التطبيق ده بس هو اللي واقف مؤقتاً — مش الماك كله. باقي تطبيقاتك شغالة عادي. لو فضل يلف أكتر من ٣٠ ثانية تقريباً، يبقى وقت الـ Force Quit.",
+        "imageName": null,
+        "tryItPromptEN": null,
+        "tryItPromptAR": null
+      },
+      {
+        "id": "fz-2",
+        "windowsLabelEN": "Ctrl+Alt+Del → Task Manager → End Task",
+        "windowsLabelAR": "Ctrl+Alt+Del ← Task Manager ← End Task",
+        "macLabelEN": "Cmd+Option+Esc → pick the frozen app → Force Quit",
+        "macLabelAR": "Cmd+Option+Esc ← اختار التطبيق المهنّج ← Force Quit",
+        "explanationEN": "Cmd+Option+Esc opens the Force Quit window — frozen apps show '(not responding)' in red. You can also right-click (or Option+right-click) the app's Dock icon and choose Force Quit. Your other apps are unaffected.",
+        "explanationAR": "Cmd+Option+Esc بيفتح نافذة Force Quit — التطبيقات المهنّجة بيبقى جنبها '(not responding)' بالأحمر. وكمان تقدر تعمل كليك يمين (أو Option+كليك يمين) على أيقونة التطبيق في الـ Dock وتختار Force Quit. باقي التطبيقات مش هتتأثر.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+Option+Esc just to see the Force Quit window, then close it",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+Option+Esc بس عشان تشوف نافذة Force Quit، وبعدين اقفلها"
+      },
+      {
+        "id": "fz-3",
+        "windowsLabelEN": "Task Manager shows CPU, memory, and which process is eating them",
+        "windowsLabelAR": "Task Manager بيوريك البروسيسور والرامات ومين اللي بياكلهم",
+        "macLabelEN": "Activity Monitor — the Mac's Task Manager",
+        "macLabelAR": "Activity Monitor — الـ Task Manager بتاع الماك",
+        "explanationEN": "Press Cmd+Space, type 'Activity Monitor'. The CPU tab shows what's working hard; the Memory tab shows RAM; the Energy tab shows what's draining your battery. Double-click any process → Quit to kill it. Fans loud? Activity Monitor tells you why.",
+        "explanationAR": "اضغط Cmd+Space واكتب Activity Monitor. تبويب CPU بيوريك مين شغال بقوة؛ وMemory بيوريك الرامات؛ وEnergy بيوريك مين بياكل البطارية. دبل كليك على أي عملية ← Quit عشان تقفلها. المراوح صوتها عالي؟ Activity Monitor هيقولك السبب.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open Activity Monitor and click the Energy tab to see what's using your battery",
+        "tryItPromptAR": "جربها دلوقتي — افتح Activity Monitor ودوس على تبويب Energy وشوف مين بياكل البطارية"
+      },
+      {
+        "id": "fz-4",
+        "windowsLabelEN": "When Windows freezes completely, you hold the power button",
+        "windowsLabelAR": "لما ويندوز يهنّج خالص، بتدوس مطوّل على زرار الباور",
+        "macLabelEN": "Same on Mac — but it's genuinely rare",
+        "macLabelAR": "نفس الحركة على الماك — بس بصراحة نادراً ما بتحصل",
+        "explanationEN": "If the entire Mac ever locks up (very rare): hold the power button (Touch ID key) ~10 seconds until it shuts off, wait a moment, press again to boot. Your apps restore their windows on restart. There's no 'reinstall Windows every year' culture here — a Mac stays fast.",
+        "explanationAR": "لو الماك كله هنّج (نادر جداً): دوس مطوّل على زرار الباور (زرار البصمة) حوالي ١٠ ثواني لحد ما يقفل، استنى شوية، ودوس تاني عشان يفتح. التطبيقات بترجع بنوافذها بعد التشغيل. ومفيش هنا ثقافة 'نسطّب ويندوز كل سنة' — الماك بيفضل سريع.",
+        "imageName": null,
+        "tryItPromptEN": null,
+        "tryItPromptAR": null
+      }
+    ]
+  },
+  {
+    "id": "menu-bar-basics",
+    "order": 12,
+    "icon": "menubar.rectangle",
+    "titleEN": "The Menu Bar",
+    "titleAR": "شريط القوائم",
+    "hookEN": "Why File and Edit live at the top of the screen",
+    "hookAR": "ليه File وEdit عايشين فوق في أعلى الشاشة",
+    "cards": [
+      {
+        "id": "mb-1",
+        "windowsLabelEN": "Every window carries its own menus",
+        "windowsLabelAR": "كل نافذة شايلة القوائم بتاعتها",
+        "macLabelEN": "One menu bar at the top — it changes with the active app",
+        "macLabelAR": "شريط قوائم واحد فوق — بيتغير مع التطبيق النشط",
+        "explanationEN": "The menu bar at the top of the screen always belongs to whichever app is active — check the bold app name next to the  logo. Click Safari then Finder and watch the menus swap. Feels alien for a week, then you'll love the extra window space.",
+        "explanationAR": "شريط القوائم اللي فوق بيتبع دايماً التطبيق النشط — بص على اسم التطبيق العريض جنب علامة . دوس على Safari وبعدين Finder ولاحظ القوائم بتتبدل. هتحس إنه غريب لمدة أسبوع، وبعدين هتحب المساحة الزيادة في النوافذ.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — click between two apps and watch the menu bar change at the top",
+        "tryItPromptAR": "جربها دلوقتي — بدّل بين تطبيقين ولاحظ شريط القوائم بيتغير فوق"
+      },
+      {
+        "id": "mb-2",
+        "windowsLabelEN": "App settings hide in Tools → Options or a gear icon somewhere",
+        "windowsLabelAR": "إعدادات البرنامج مستخبية في Tools ← Options أو ترس في حتة ما",
+        "macLabelEN": "Every app's settings: click the app's name → Settings (or Cmd+,)",
+        "macLabelAR": "إعدادات أي تطبيق: دوس على اسم التطبيق ← Settings (أو Cmd+,)",
+        "explanationEN": "The bold app-name menu is the same in every app: About, Settings (always Cmd+comma), Hide, and Quit (Cmd+Q). Once you learn it, you can configure any Mac app ever made — they all follow this rule.",
+        "explanationAR": "قايمة اسم التطبيق العريضة واحدة في كل التطبيقات: About وSettings (دايماً Cmd+كوما) وHide وQuit (Cmd+Q). أول ما تحفظها، هتعرف تظبط أي تطبيق ماك في الدنيا — كلهم ماشيين على نفس القاعدة.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — press Cmd+, (comma) in Safari to open its settings",
+        "tryItPromptAR": "جربها دلوقتي — اضغط Cmd+, (كوما) في Safari وشوف إعداداته"
+      },
+      {
+        "id": "mb-3",
+        "windowsLabelEN": "Hunting through menus to find one command",
+        "windowsLabelAR": "بتدور في القوائم كلها على أمر واحد",
+        "macLabelEN": "Help menu → type the command name → it points at it with an arrow",
+        "macLabelAR": "قايمة Help ← اكتب اسم الأمر ← بيشاورلك عليه بسهم",
+        "explanationEN": "The Mac's hidden gem: click Help in the menu bar and type what you're looking for — say 'rotate' in Preview. It highlights the exact menu item with a floating blue arrow. You never need to memorize where commands live.",
+        "explanationAR": "الجوهرة المستخبية في الماك: دوس Help في شريط القوائم واكتب اللي بتدور عليه — مثلاً 'rotate' في Preview. هيعلّم على الأمر بالظبط بسهم أزرق عايم. عمرك ما هتحتاج تحفظ الأوامر مكانها فين.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — in any app, click Help and type any command name",
+        "tryItPromptAR": "جربها دلوقتي — في أي تطبيق، دوس Help واكتب اسم أي أمر"
+      },
+      {
+        "id": "mb-4",
+        "windowsLabelEN": "Right-click works out of the box on every mouse",
+        "windowsLabelAR": "الكليك يمين شغال من أول لحظة على أي ماوس",
+        "macLabelEN": "Set up secondary click your way — and Ctrl+Click always works",
+        "macLabelAR": "ظبّط الكليك يمين على مزاجك — وCtrl+Click شغال دايماً",
+        "explanationEN": "System Settings → Trackpad → Point & Click → Secondary Click: choose two-finger tap (default) or a bottom-corner click. On any Mac, holding Ctrl while clicking is always a right-click — handy when someone else's Mac is set up differently.",
+        "explanationAR": "System Settings ← Trackpad ← Point & Click ← Secondary Click: اختار الضغط بصباعين (الافتراضي) أو الضغط في ركن التراك باد. وعلى أي ماك، الضغط على Ctrl مع الكليك بيعمل كليك يمين دايماً — مفيدة لما تمسك ماك حد تاني مظبوط مختلف.",
+        "imageName": null,
+        "tryItPromptEN": "Try it now — open System Settings → Trackpad and pick the secondary-click style you like",
+        "tryItPromptAR": "جربها دلوقتي — افتح System Settings ← Trackpad واختار طريقة الكليك يمين اللي تريحك"
+      }
+    ]
   }
 ]

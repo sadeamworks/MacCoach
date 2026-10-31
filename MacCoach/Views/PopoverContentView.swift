@@ -4,10 +4,11 @@ enum NavigationDestination: Equatable {
     case welcome
     case dashboard
     case lesson(Lesson)
+    case quiz
 
     static func == (lhs: NavigationDestination, rhs: NavigationDestination) -> Bool {
         switch (lhs, rhs) {
-        case (.welcome, .welcome), (.dashboard, .dashboard):
+        case (.welcome, .welcome), (.dashboard, .dashboard), (.quiz, .quiz):
             return true
         case (.lesson(let a), .lesson(let b)):
             return a.id == b.id
@@ -32,7 +33,7 @@ struct PopoverContentView: View {
         contentView
             .environment(progressStore)
             .environment(localeManager)
-            .frame(minWidth: 320, maxWidth: 320, minHeight: 400, maxHeight: 480)
+            .frame(minWidth: 360, maxWidth: 360, minHeight: 480, maxHeight: 560)
             .onAppear {
                 currentScreen = progressStore.hasCompletedWelcome ? .dashboard : .welcome
             }
@@ -54,11 +55,16 @@ struct PopoverContentView: View {
                 Group {
                     switch selectedTab {
                     case .lessons:
-                        DashboardView(onSelectLesson: { lesson in
-                            if !lesson.cards.isEmpty {
-                                currentScreen = .lesson(lesson)
+                        DashboardView(
+                            onSelectLesson: { lesson in
+                                if !lesson.cards.isEmpty {
+                                    currentScreen = .lesson(lesson)
+                                }
+                            },
+                            onSelectQuiz: {
+                                currentScreen = .quiz
                             }
-                        })
+                        )
                     case .cheatSheet:
                         CheatSheetView()
                     }
@@ -70,6 +76,10 @@ struct PopoverContentView: View {
             }
         case .lesson(let lesson):
             LessonView(lesson: lesson, onBack: {
+                currentScreen = .dashboard
+            })
+        case .quiz:
+            QuizView(onBack: {
                 currentScreen = .dashboard
             })
         }

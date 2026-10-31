@@ -1,8 +1,10 @@
 import SwiftUI
+import StoreKit
 
 struct LessonView: View {
     @Environment(ProgressStore.self) private var progressStore
     @Environment(LocaleManager.self) private var localeManager
+    @Environment(\.requestReview) private var requestReview
 
     let lesson: Lesson
     let onBack: () -> Void
@@ -91,6 +93,7 @@ struct LessonView: View {
                 if isLastCard {
                     Button {
                         progressStore.markLessonComplete(lesson.id)
+                        maybeRequestReview()
                         onBack()
                     } label: {
                         HStack(spacing: 4) {
@@ -127,5 +130,14 @@ struct LessonView: View {
 
     private func saveProgress() {
         progressStore.saveCardProgress(lessonId: lesson.id, cardIndex: currentCardIndex)
+    }
+
+    /// Ask for a rating exactly once, at the moment of delight: the first completed lesson.
+    private func maybeRequestReview() {
+        guard !progressStore.hasRequestedReview, progressStore.completedLessons.count == 1 else { return }
+        progressStore.hasRequestedReview = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            requestReview()
+        }
     }
 }
